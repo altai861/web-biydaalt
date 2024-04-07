@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>MyAnimeList</title>
 </head>
-<body>
+<body class="light-mode">
     <header id="header">
         <div id="header-logo-div">
             <h1 id="mal-logo">MyAnimeList</h1>
@@ -18,10 +18,34 @@
         </div>
     </header>
     <nav id="navbar">
-        <div class="nav-element">Anime</div>
-        <div class="nav-element">Community</div>
-        <div class="nav-element">Watch</div>
-        <div class="nav-element">Help</div>
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="#">Anime search</a>
+                <a href="#">Top anime</a>
+                <a href="#">Seasonal anime</a>
+                <a href="#">Reviews</a>
+                <a href="#">Anime detail</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
         <div id="search-input">
             <form>
                 <input placeholder="Search anime...">

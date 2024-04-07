@@ -2,6 +2,16 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
 body {
     margin-left: 100px;
     margin-right: 100px;
@@ -54,15 +64,45 @@ main {
 }
 
 #navbar {
+    background-color: rgb(23, 23, 214);
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-.nav-element {
-    margin-right: 10px;
+.navbar-element {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 236, 170);
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #1420c8; color: white}
+
+.navbar-element:hover .dropdown-content {display: block;}
+.navbar-element:hover {
+    background-color: rgb(47, 50, 210);
+    color: white;
+}
+
 
 #search-input {
     flex-grow: 1; /* Take up remaining space */
