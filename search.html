@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
     <link rel="stylesheet" href="./style.css">
-    <title>MyAnimeList</title>
+    <title>Anime-MyAnimeList</title>
 </head>
-<body>
+<body class="light-mode">
     <header id="header">
         <div id="header-logo-div">
             <h1 id="mal-logo">MyAnimeList</h1>
@@ -18,10 +18,34 @@
         </div>
     </header>
     <nav id="navbar">
-        <div class="nav-element">Anime</div>
-        <div class="nav-element">Community</div>
-        <div class="nav-element">Watch</div>
-        <div class="nav-element">Help</div>
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="#">Anime search</a>
+                <a href="#">Top anime</a>
+                <a href="#">Seasonal anime</a>
+                <a href="#">Reviews</a>
+                <a href="#">Anime detail</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
         <div id="search-input">
             <form>
                 <input placeholder="Search anime...">
@@ -31,11 +55,312 @@
             </form>
         </div>
     </nav>
-    <main id="main">
-        
+    <main>
+        <h3 style="font-size: small;">Anime Search</h3>
+        <hr>
+        <div>
+            <div><a href="./index.html">Top</a> > <a href="./search.html">Anime</a></div>
+            <div id="alphabet">
+                <div class="alphabet-element">Upcoming</div>
+                <div class="alphabet-element">Just Added</div>
+                <div class="alphabet-element">#</div>
+                <div class="alphabet-element">A</div>
+                <div class="alphabet-element">B</div>
+                <div class="alphabet-element">C</div>
+                <div class="alphabet-element">D</div>
+                <div class="alphabet-element">E</div>
+                <div class="alphabet-element">F</div>
+                <div class="alphabet-element">G</div>
+                <div class="alphabet-element">H</div>
+                <div class="alphabet-element">I</div>
+                <div class="alphabet-element">J</div>
+                <div class="alphabet-element">K</div>
+                <div class="alphabet-element">L</div>
+                <div class="alphabet-element">M</div>
+                <div class="alphabet-element">N</div>
+                <div class="alphabet-element">O</div>
+                <div class="alphabet-element">P</div>
+                <div class="alphabet-element">Q</div>
+                <div class="alphabet-element">R</div>
+                <div class="alphabet-element">S</div>
+                <div class="alphabet-element">T</div>
+                <div class="alphabet-element">U</div>
+                <div class="alphabet-element">V</div>
+                <div class="alphabet-element">W</div>
+                <div class="alphabet-element">X</div>
+                <div class="alphabet-element">Y</div>
+                <div class="alphabet-element">Z</div>
+            </div>
+        </div>
+        <hr>
+        <div id="search-anime-div">
+            <input id="search-anime-input" placeholder="Search anime...">
+            <button type="submit">
+                <img src="./assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+            </button>
+            <div id="advanced-search-button-div">
+                <a id="advanced-search-button" href="#">+ Advanced search</a>
+            </div>
+        </div>
+        <div id="search-filter-div">
+            <h4>Filters</h4>
+            <hr>
+            <div class="filter-input-div">
+                <label for="type-select">Type</label>
+                <select id="type-select">
+                    <option>Select type</option>
+                    <option>TV</option>
+                    <option>OVA</option>
+                    <option>Movie</option>
+                    <option>Special</option>
+                    <option>ONA</option>
+                    <option>Music</option>
+                    <option>CM</option>
+                    <option>PV</option>
+                </select>
+            </div>
+            <div class="filter-input-div">
+                <label for="score-select">Score</label>
+                <select id="score-select">
+                    <option>Select score</option>
+                    <option>(10) Masterpiece</option>
+                    <option>(9) Great</option>
+                    <option>(8) Very Good</option>
+                    <option>(7) Good</option>
+                    <option>(6) Fine</option>
+                    <option>(5) Average</option>
+                    <option>(4) Bad</option>
+                    <option>(3) Very Bad</option>
+                    <option>(2) Horrible</option>
+                    <option>(1) Appaling</option>
+                </select>
+            </div>
+            <div class="filter-input-div">
+                <label for="status-select">Status</label>
+                <select id="status-select">
+                    <option>Select status</option>
+                    <option>Finished airing</option>
+                    <option>Currently airing</option>
+                    <option>Not yet aired</option>
+                </select>
+            </div>
+            <div class="filter-input-div">
+                <label for="producer-select">Producer</label>
+                <select id="producer-select">
+                    <option>Select producer</option>
+                    <option>TV</option>
+                    <option>OVA</option>
+                    <option>Movie</option>
+                    <option>Special</option>
+                    <option>ONA</option>
+                    <option>Music</option>
+                    <option>CM</option>
+                    <option>PV</option>
+                </select>
+            </div>
+            <div class="filter-input-div">
+                <label for="rating-select">Rating</label>
+                <select id="rating-select">
+                    <option>Select rating</option>
+                    <option>G - All ages</option>
+                    <option>PG - Children</option>
+                    <option>PG 13 - Teens or older</option>
+                    <option>R - 17+ (Violence and profanity)</option>
+                    <option>R+ - Mild nudity</option>
+                    <option>Rx Hentai</option>
+                </select>
+            </div>            
+            <div class="filter-input-div">
+                <label for="start-date-input">Start Date</label>
+                <input id="start-date-input" type="date">
+            </div>            
+            <div class="filter-input-div">
+                <label for="end-date-input">End Date</label>
+                <input id="end-date-input" type="date">
+            </div>     
+            <button id="advanced-filter-button">Search</button>       
+        </div>
+        <div>
+            <h3>Genres</h3>
+            <hr>
+            <div class="some-container" id="genres-container">
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Action</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Adventure</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Avant Garde</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Award Winning</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Comedy</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Drama</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Fantasy</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Girls Love</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Gourmet</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Horror</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Mystery</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Romance</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Sci-Fi</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Sports</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Supernatural</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Suspense</div>
+            </div>
+            <h3>Themes</h3>
+            <hr>
+            <div class="some-container" id="themes-container">
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Adult Cast</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Anthropomonic</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> CGDCT</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Childcare</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Combat Sports</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Crossdressing</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Delinquents</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Detective</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Educational</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Gag Humor</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Gore</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Harem</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> High Stakes Game</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Historical</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Idols (Female)</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Idols (Male)</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Isekai</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Iyashikei</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Love Polygon</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Magical Sex Shift</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Mahou Shoujo</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Martial Arts</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Mecha</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Medical</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Military</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Music</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Mythology</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Organized Crime</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Otaku Culture</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Parody</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Performing Arts</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Pets</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Psychological</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Racing</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Reincarnation</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Reverse Harem</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Romantic Subtext</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Samurai</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> School</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Showbiz</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Space</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Strategy Game</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Super Power</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Survival</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Team Sports</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Time Travel</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Vampire</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Video Game</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Visual Arts</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Workplace</div>
+
+            </div>
+            <h3>Demographics</h3>
+            <hr>
+            <div class="some-container" id="demographics-container">
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Josei</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Kids</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Seinen</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Shoujo</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Shounen</div>
+            </div>
+            <h3>Studios</h3>
+            <hr>
+            <div class="some-container" id="studios-container">
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Toei Animation</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Discotek Media</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> TMS Entertainment</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Studio Deen</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Pierrot</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> OLM</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> AIC</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> TBS</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> A-1 Pictures</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Shin-Ei Animation</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> bilibili</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> DLE</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Bandai Entertainment</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Tatsunoko Production</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Shogakukan-Shueisha Productions</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Tencent Penguin Pictures</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Geneon Entertainment USA</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> TOHO</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Xebec</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Nihon Ad Systems</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Gonzo</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Warner Bros. Japan</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Kyoto Animation</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Silver LINK</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Group TAC</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Showgate</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Geneon Universal Entertainment</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Hololive Production</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Satelight</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Brain's Base</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Mediabank</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> LIDENFILMS</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> AQUA ARIS</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Wit Studio</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Geidai Animation</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Studio Mausu</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Ashi Productions</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Seven</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> BS Fuji</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Lune-Pictures</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Studio 4C</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Gainax</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Mushi Production</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Zexcs</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> ufotable</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Studio Hibari</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> feel.</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Studio Comet</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> iQIYI</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Bandai Namco Pictures</div>
+            </div>
+            <h3>Rankings</h3>
+            <hr>
+            <div class="some-container" id="rankings-container">
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> All Anime</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Top Airing</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Top Upcoming</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Top TV Series</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Top Movies</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Top OVAs</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Top ONAs</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Top Special</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Most Popular</div>
+            </div>
+            <h3>Anime Seasons</h3>
+            <hr>
+            <div class="some-container" id="seasons-container">
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Fall 2024</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Summer 2024</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Spring 2024</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Winter 2024</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Fall 2023</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Summer 2023</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Spring 2023</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Winter 2023</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Fall 2022</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Summer 2022</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Spring 2022</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Winter 2022</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Fall 2021</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Summer 2021</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Spring 2021</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Winter 2021</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Fall 2020</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Summer 2020</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Spring 2020</div>
+                <div class="single-genre-div"><span style="color:rgb(173, 173, 173)">></span> Winter 2020</div>
+            </div>
+        </div>
     </main>
     <footer id="footer">
         <p>MyAnimeList.net is a property of MyAnimeList Co.,Ltd. ©2024 All Rights Reserved.</p>
     </footer>
+    <script src="./searchPage.js"></script>
 </body>
 </html>
