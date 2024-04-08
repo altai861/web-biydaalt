@@ -153,8 +153,9 @@ input {
 .detail-head{
     text-align: center;
     text-decoration: none;
-    background-color: #333;
+    background-color: #454545;
     margin-top: 20px;
+    margin-bottom: 0;
 }
 .detail-nav{
     list-style: none;
@@ -172,7 +173,7 @@ input {
 }
 /* scroll */
 .scrollable-container {
-    height: 240px; /* Set the height of the container */
+    height: 220px; /* Set the height of the container */
     overflow-y: auto; /* Enable vertical scrollbar */
     padding: 10px; /* Optional: Add padding for better appearance */
     border: 1px solid #ccc; /* Optional: Add border for better appearance */
