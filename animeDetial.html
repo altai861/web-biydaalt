@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/style-anime-detial.css">
+    <title>MyAnimeList</title>
+</head>
+<body class="light-mode">
+    <header id="header">
+        <div id="header-logo-div">
+            <h1 id="mal-logo">MyAnimeList</h1>
+        </div>
+        <div id="login-signup-buttons">
+            <button id="login-button">Login</button>
+            <button id="signup-button">Signup</button>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="#">Anime search</a>
+                <a href="#">Top anime</a>
+                <a href="#">Seasonal anime</a>
+                <a href="#">Reviews</a>
+                <a href="#">Anime detail</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div id="search-input">
+            <form>
+                <input placeholder="Search anime...">
+                <button type="submit">
+                    <img src="./assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="animeName">
+            <h3 id="animeName-h3">Tensei shitara Slime Datta Ken 3rd Season</h3>
+            <h4 id="animeName-h4">That Time I Got Reincarnated as a Slime Season 3</h4>
+        </div>
+        <div id="main-content" class="main-content">
+            <div class="main-box">
+                <nav id="navbarAnimeDetial">
+                    <ul id="navbarAnimeDetialList">
+                        <li><a href="#" onclick="showPage('Detials')">Details</a></li>
+                        <li><a href="#" onclick="showPage('Character-Staff')">Character & Staff</a></li>
+                        <li><a href="#" onclick="showPage('Episodes')">Episodes</a></li>
+                        <li><a href="#" onclick="showPage('Reviews')">Reviews</a></li>
+                    </ul>
+                </nav>
+                <div  class="main-side" id="Detials" >
+                    <div class="rating">
+                        <div class="rating-info-1" >
+                            <p class="score-title">Score</p>
+                            <p class="score">8.45</p>
+                            <p class="user-count">4046 users</p>
+                        </div>
+                        <div class="rating-info-2">
+                            <p class="ranking">Ranked #154</p>
+                            <p class="popularity">Popularity #1147</p>
+                            <p class="members-count">Members 208,964</p>
+                        </div>
+                    </div>
+                    <div class="addToMyList">
+                        <button id="AddToMyListButton">Add to My List</button>
+                    </div>
+                    <div class="animeInfo">
+                    <p id="mainContentInfoName">Synopsis</p>
+                    <p id="mainContentInfo">Third season of Tensei shitara Slime Datta Ken.</p>
+                    <p id="mainContentInfoName">Background</p>
+                    <p id="mainContentInfo">No background information has been added to this title. Help improve our database by adding background information here.</p>
+                    </div>
+                </div>
+                <div class="main-side" id="Character-Staff" style="display: none;">
+                    <h5 class="sideContentInfoName " style="border-bottom: 0.7px solid rgb(166, 166, 166);">Characters & Voice Actors</h5>
+                    <div id="character-staff">
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/1-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Tempest, Rimuru</p>
+                                    <p class="type">Main</p>
+                                    <p class="favorite-count">22,833 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Okasaki, Miho</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/1-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/2-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Albis</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">26 Favorites</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/3-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Attley, Glenda</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">1 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Hino, Mari</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/3-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/4-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Bacchus</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">0 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Iijima, Hajime</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/4-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/5-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Bauman, Arnaud</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">0 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Takemoto, Eiji</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/5-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/6-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Benimaru</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">1,080 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Furukawa, Makoto</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/6-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/7-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Daikenja</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">75 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Toyoguchi, Megumi</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/7-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/8-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Damrada</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">1 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Namikawa, Daisuke</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/8-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/9-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Diablo</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">2,443 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Sakurai, Takahiro</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/9-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-character">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/character-staff/10-0.webp" alt="character">
+                                </div>
+                                <div class="info">
+                                    <p class="name">Fritz</p>
+                                    <p class="type">Supporting</p>
+                                    <p class="favorite-count">0 Favorites</p>
+                                </div>
+                            </div>
+                            <div class="staff">
+                                <div class="info">
+                                    <p class="name">Murata, Taishi</p>
+                                    <p class="country">Japanese</p>
+                                </div>
+                                <div class="staff-img">
+                                    <img src="./assets/character-staff/10-1.jpeg" alt="staff">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main-side" id="Episodes" style="display: none;">
+                    <h5 class="sideContentInfoName " style="border-bottom: 0.7px solid rgb(166, 166, 166);">Episodes(24/24)</h5>
+                    <table class="episode-detials">
+                        <tr class="title">
+                            <th></th>
+                            <th>Episode Title</th>
+                            <th>Aired</th>
+                            <th>Poll</th>
+                            <th>Replies</th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th> <p>1</p></th>
+                            <th>
+                                <p>The Storm Dragon, Veldora</p>
+                                <p>Boufuu Ryuu Veldora (暴風竜ヴェルドラ)</p>
+                            </th>
+                            <th><p>Oct 2, 2018</p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p>average 4.3</p>
+                            </th>
+                            <th><p>396</p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>2</p></th>
+                            <th>
+                                <p>Meeting the Goblins</p>
+                                <p>Goblin-tachi to no Deai (ゴブリンたちとの出会い)</p>
+                            </th>
+                            <th><p>Oct 9, 2018</p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p>average 4.4</p>
+                            </th>
+                            <th><p>200</p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>3</p></th>
+                            <th>
+                                <p>Battle at the Goblin Village</p>
+                                <p>Goblin Mura de no Tatakai (ゴブリン村での戦い)</p>
+                            </th>
+                            <th><p>Oct 16, 2018</p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p>average 4.5</p>
+                            </th>
+                            <th> <p>219</p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>4</p></th>
+                            <th>
+                                <p>In the Kingdom of the Dwarves</p>
+                                <p>Dwarf no Oukoku nite (ドワーフの王国にて)</p>
+                            </th>
+                            <th><p>Oct 23, 2018</p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p>average 4.5</p>
+                            </th>
+                            <th><p>195</p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>5</p></th>
+                            <th>
+                                <p>Hero King, Gazel Dwargo</p>
+                                <p>Eiyuu Ou Gazel Dwargo (英雄王ガゼル・ドワルゴ)</p>
+                            </th>
+                            <th><p>Oct 30, 2018</p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p>average 4.4</p>
+                            </th>
+                            <th><p>192</p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>6</p></th>
+                            <th>
+                                <p>Shizu</p>
+                                <p>Shizu (シズ)</p>
+                            </th>
+                            <th><p>Nov 6, 2018</p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p>average 4.6</p>
+                            </th>
+                            <th><p>193</p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>7</p></th>
+                            <th>
+                                <p>Conqueror of Flames</p>
+                                <p>Bakuen no Shihaisha (爆炎の支配者)</p>
+                            </th>
+                            <th><p>Nov 13, 2018</p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p>average 4.6</p>
+                            </th>
+                            <th><p>217</p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>8</p></th>
+                            <th>
+                                <p></p>
+                                <p></p>
+                            </th>
+                            <th><p></p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p></p>
+                            </th>
+                            <th><p></p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>6</p></th>
+                            <th>
+                                <p></p>
+                                <p></p>
+                            </th>
+                            <th><p></p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p></p>
+                            </th>
+                            <th><p></p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>6</p></th>
+                            <th>
+                                <p></p>
+                                <p></p>
+                            </th>
+                            <th><p></p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p></p>
+                            </th>
+                            <th><p></p></th>
+                        </tr>
+                        <tr class="single-episode">
+                            <th><p>6</p></th>
+                            <th>
+                                <p></p>
+                                <p></p>
+                            </th>
+                            <th><p></p></th>
+                            <th>
+                                <p>Vote</p>
+                                <p></p>
+                            </th>
+                            <th><p></p></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <aside id="side-content">
+                <section id="information-section">
+                    <ul id="information-list">
+                        <div id="animePhoto">
+                            <img src="./assets/ta-3.webp" alt="Tensei shitara Slime Datta Ken 3rd Season">
+                        </div>
+                        
+                        <li class="info-list-item">
+                            <div id="alternativeTitles">
+                                <h5 id="sideContentInfoName">Alternative Titles</h5>
+                                <p>Japanese: 転生したらスライムだった件 第3期 </p>
+                                <p>English: That Time I Got Reincarnated as a Slime Season 3</p>
+                            </div>
+                        </li>
+                        <li class="info-list-item">
+                            <div id="information">
+                                <h5 id="sideContentInfoName">Information</h5>
+                                <p>Type: TV</p>
+                                <p>Episodes: Unknown</p>
+                                <p>Status: Not yet aired</p>
+                                <p>Aired: Apr 5, 2024 to ?</p>
+                                <p>Premiered: Spring 2024</p>
+                                <p>Broadcast: Fridays at 23:00 (JST)</p>
+                                <p>Producers: Kodansha</p>
+                                <p>Licensors: None found, add some</p>
+                                <p>Studios: 8bit</p>
+                                <p>Source: Manga</p>
+                                <p>Genres: Action, Adventure, Comedy, Fantasy</p>
+                                <p>Themes: Isekai, Reincarnation</p>
+                                <p>Demographic: Shounen</p>
+                                <p>Duration: Unknown</p>
+                                <p>Rating: PG-13 - Teens 13 or older</p>
+                            </div>
+                        </li>
+                        <li class="info-list-item">
+                            <div id="statics">
+                                <h5 id="sideContentInfoName">Statics</h5>
+                                <p>Score: N/A (scored by - users)</p>
+                                <p>Ranked: N/A</p>
+                                <p>Popularity: #1226</p>
+                                <p>Members: 193,634</p>
+                                <p>Favorites: 2,394</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+        
+    </main>
+    <footer id="footer">
+        <p>MyAnimeList.net is a property of MyAnimeList Co.,Ltd. ©2024 All Rights Reserved.</p>
+    </footer>
+    <script src="./scripts/animeDetial.js"></script>
+</body>
+</html>
