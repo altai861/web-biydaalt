@@ -64,12 +64,12 @@ main {
 }
 
 #navbar {
-    background-color: rgb(23, 23, 214);
+    background-color: rgb(32, 32, 156);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0;
 }
 
 .navbar-element {
@@ -99,8 +99,8 @@ main {
 
 .navbar-element:hover .dropdown-content {display: block;}
 .navbar-element:hover {
-    background-color: rgb(47, 50, 210);
-    color: white;
+    background-color: rgb(240, 236, 170);
+    color: black;
 }
 
 
@@ -109,7 +109,7 @@ main {
     text-align: right; /* Align input to the right */
 }
 
-input {
+#navbar-search-input {
     width: 30%;
     padding: 5px;
 }
@@ -246,4 +246,87 @@ input {
     padding: 20px;
     font-size: small;
     border: 0.5px solid rgb(202, 202, 202)
+}
+
+
+/* search.html ehleh baina  */
+
+#alphabet {
+    display: flex;
+    justify-content: center;
+}
+
+.alphabet-element {
+    color: rgb(115, 114, 114);
+    padding: 5px;
+    font-size: smaller;
+}
+
+.alphabet-element:hover {
+    background-color: rgb(187, 219, 247);
+}
+
+#search-anime-input {
+    font-size: large;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 60%;
+}
+
+#search-anime-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search-icon {
+    cursor: pointer;
+}
+
+#advanced-search-button-div {
+    text-align: right;
+}
+
+#advanced-search-button {
+    font-size: small;
+}
+
+#search-filter-div {
+    display: none;
+}
+
+.filter-input-div {
+    margin: 5px;
+    font-size: small;
+}
+
+.filter-input-div label {
+    margin-right: 10px;
+}
+
+.single-genre-div {
+    width: 175px;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color:rgb(96, 129, 176)
+}
+
+.single-genre-div:hover {
+    background-color: rgb(197, 215, 233);
+}
+
+
+.some-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#advanced-filter-button {
+    font-size: larger;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(23, 23, 132);
 }
