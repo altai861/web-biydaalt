@@ -151,6 +151,26 @@ input {
     display: flex;
     flex-wrap: wrap;
 }
+#alphabet {
+    display: flex;
+    justify-content: center;
+}
+.alphabet-element {
+    color: rgb(115, 114, 114);
+    padding: 5px;
+    font-size: smaller;
+}
+
+.alphabet-element:hover {
+    background-color: rgb(187, 219, 247);
+}
+
+.single-anime {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
 .detail-head{
     text-align: center;
     text-decoration: none;
