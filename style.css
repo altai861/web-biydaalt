@@ -330,3 +330,7 @@ main {
     border-radius: 2px;
     background-color: rgb(23, 23, 132);
 }
+
+a {
+    text-decoration: none;
+}
