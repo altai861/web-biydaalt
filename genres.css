@@ -149,11 +149,11 @@ input {
 /* anime detail */
 .detail{
     display: flex;
+    flex-wrap: wrap;
 }
 .detail-head{
     text-align: center;
     text-decoration: none;
-    background-color: #454545;
     margin-top: 20px;
     margin-bottom: 0;
 }
@@ -168,7 +168,6 @@ input {
 }
 .detail-footer{
     display: flex;
-    background-color: #333;
     justify-content: space-between;
 }
 /* scroll */
