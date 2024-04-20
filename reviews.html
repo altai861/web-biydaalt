@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/style-anime-detial.css">
+    <title>MyAnimeList</title>
+</head>
+<body class="light-mode">
+    <header id="header">
+        <div id="header-logo-div">
+            <a href="./index.html"><h1 id="mal-logo">MyAnimeList</h1></a>
+        </div>
+        <div id="login-signup-buttons">
+            <button id="login-button">Login</button>
+            <button id="signup-button">Signup</button>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="./search.html">Anime search</a>
+                <a href="#">Top anime</a>
+                <a href="#">Seasonal anime</a>
+                <a href="#">Reviews</a>
+                <a href="#">Anime detail</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div id="search-input">
+            <form>
+                <input id="navbar-search-input" placeholder="Search anime...">
+                <button type="submit">
+                    <img src="./assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="welcome">
+            <h3 id="welcoming-h3">Reviews</h3>
+        </div>
+        <div class="site-map"><a href="./index.html">Top</a> > <a href="./search.html">Anime</a> > <a href="./reviews.html">Anime reviews</a></div>
+        <div class="content">   
+            <div class="single-review-main">
+                <p class="animeName">Kara no Kyoukai Movie 6: Boukyaku Rokuon</p>
+                <div class="main">
+                    <div class="user-img">
+                        <img src="./assets/users/3.jpeg" alt="user">
+                    </div>
+                    <div class="review-content">
+                        <div class="top-line">
+                            <p class="user-name">Teru</p>
+                            <p class="date">Mar 25, 2019</p>
+                        </div>
+                        <div class="bottom-line">
+                            <div class="first-line">
+                                <p class="review-article">
+                                    hoo boy. coming off paradox spiral this chapter is complete tonal whiplash. azaka kokutou, a minor character who appears 
+                                    in all of 3 scenes in the previous 5 chapters, takes center stage this time and right off the bat we learn that her 
+                                    needless cruelty towards shiki in her previous appearances is because ~incest reasons~. azaka is an infuriatingly bad 
+                                    character while shiki is largely relegated to the background but at least she gets like one cool scene. from what ive 
+                                    gathered the adaptation of this chapter deviates a bit from the light novel but i don't think the original was much better, 
+                                    it's purpose ...
+                                </p>
+                                <div class="animeImg">
+                                    <img src="./assets/FullMetal.webp">
+                                </div>
+                            </div>
+                            <div class="reactions">
+                                <div class="reaction-emote">
+                                    <img src="./assets/reaction/hearth.png" alt="reaction">
+                                    <img src="./assets/reaction/NOTED.png" alt="reaction">
+                                    <img src="./assets/reaction/HUH.png" alt="reaction">
+                                </div>
+                                <p class="reaction-count">400</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="single-review-main">
+                <p class="animeName">Maou no Ore ga Dorei Elf wo Yome ni Shitanda ga, Dou Medereba Ii?</p>
+                <div class="main">
+                    <div class="user-img">
+                        <img src="./assets/users/2.JPG" alt="user">
+                    </div>
+                    <div class="review-content">
+                        <div class="top-line">
+                            <p class="user-name">Tsundgerhen</p>
+                            <p class="date">Apr 19, 2024</p>
+                        </div>
+                        <div class="bottom-line">
+                            <div class="first-line">
+                                <p class="review-article">
+                                    Stronk magic boy Zagan falls in love with slave elf girl and buys her, and he treats her, a mere slave waifu, KINDLY? 
+                                    This anime really be breaking new grounds here, never saw that coming. Stockholm syndrome? More like stockholm WINdrome. 
+                                    Hahahaha.... sorry. Whenever our boy Zagan feels a bit sad, elf waifu is always there by his side to remind him that he is 
+                                    'KIND' because he treated her well. What a revolutionary anime with original ideas!
+                                    What did I even expect?. It's a generic 'dude treats traumatized girl with basic human decency until she develops feelings 
+                                    for him' anime. Whoever called this 'original' and ...
+                                </p>
+                                <div class="animeImg">
+                                    <img src="./assets/taa-1.jpeg">
+                                </div>
+                            </div>
+                            <div class="reactions">
+                                <div class="reaction-emote">
+                                    <img src="./assets/reaction/hearth.png" alt="reaction">
+                                    <img src="./assets/reaction/NOTED.png" alt="reaction">
+                                    <img src="./assets/reaction/HUH.png" alt="reaction">
+                                </div>
+                                <p class="reaction-count">400</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <script src="./scripts/contentChanger.js"></script>
+    </main>
+</body>
+</html>

@@ -64,12 +64,12 @@ main {
 }
 
 #navbar {
-    background-color: rgb(23, 23, 214);
+    background-color: rgb(32, 32, 156);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0;
 }
 
 .navbar-element {
@@ -99,8 +99,8 @@ main {
 
 .navbar-element:hover .dropdown-content {display: block;}
 .navbar-element:hover {
-    background-color: rgb(47, 50, 210);
-    color: white;
+    background-color: rgb(240, 236, 170);
+    color: black;
 }
 
 
@@ -109,6 +109,25 @@ main {
     text-align: right; /* Align input to the right */
 }
 
+#navbar-search-input {
+    width: 30%;
+    padding: 5px;
+}
+
+#welcome {
+    background-color: rgb(200, 200, 248);
+}
+
+#welcoming-h3 {
+    margin: 2px;
+}
+.site-map {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+.site-map a {
+    font-size: 16px;
+}
 input {
     width: 30%;
     padding: 5px;
@@ -116,12 +135,14 @@ input {
 #navbarAnimeDetial {
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgb(168, 168, 168);;
+    margin-top: 2%;
 }
 
 #navbarAnimeDetialList {
     display: flex;
     margin: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(0, 0, 152);;
 }
 
 #navbarAnimeDetialList ul {
@@ -320,20 +341,49 @@ input {
 table {
     width: 100%;
     border-collapse: collapse;
+    align-items: middle;
+    
 }
-.episode-detials tr, th {
-    border: 0.7px solid rgb(47, 50, 210);
+table tr, th {
+    border: 0.7px solid rgb(208, 206, 206);
+    padding: 8px;
+    text-align: middle;
 }
-.episode-detials p{
+
+table p{
     font-size: 12px;
     margin: 10px auto 10px;
     -webkit-margin-collapse: collapse;
 }
 
-.episode-detials .title {
+table .title {
     background-color: rgb(47, 50, 210);
     color: white;
+    border: 0.7px solid  white;
+    width: 40%;
 }
+
+.title-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.title-content .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    text-align: left;
+}
+
+.inTwoSide {
+    display: flex;
+    flex-direction: row;
+}
+
+.inTwoSide .title{
+    margin-right: 84%;
+} 
 
 .control-bar {
     display: flex;
@@ -425,4 +475,42 @@ table {
 #footer p{
     font-size: 10px;
     color:white;
+}
+
+/* css for seansonal anime */
+
+.single-review-main {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    border-bottom: 0.7px solid rgb(166, 166, 166);
+    border-top: 0.7px solid rgb(166, 166, 166);
+}
+.single-review-main .main{
+    display: flex;
+    flex-direction: row;
+}
+.single-review-main p {
+    font-size: 14px;
+}
+
+.user-img img{
+    width: 80px;
+    margin-top: 15px;
+}
+
+.first-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.animeImg img {
+    width: 60px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.animeName {
+    color: #1420c8;
+    font-size: 17p;
+    margin-left: 20px;
 }

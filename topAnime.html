@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/style-anime-detial.css">
+    <title>MyAnimeList</title>
+</head>
+<body class="light-mode">
+    <header id="header">
+        <div id="header-logo-div">
+            <a href="./index.html"><h1 id="mal-logo">MyAnimeList</h1></a>
+        </div>
+        <div id="login-signup-buttons">
+            <button id="login-button">Login</button>
+            <button id="signup-button">Signup</button>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="./search.html">Anime search</a>
+                <a href="#">Top anime</a>
+                <a href="#">Seasonal anime</a>
+                <a href="#">Reviews</a>
+                <a href="#">Anime detail</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div id="search-input">
+            <form>
+                <input id="navbar-search-input" placeholder="Search anime...">
+                <button type="submit">
+                    <img src="./assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="welcome">
+            <h3 id="welcoming-h3">Top Anime</h3>
+        </div>
+        <div><a href="./index.html">Top</a> > <a href="./search.html">Anime</a> > <a href="./topAnime.html">Top Anime</a></div>
+        <nav id="navbarAnimeDetial">
+            <ul id="navbarAnimeDetialList">
+                <li><a href="#" onclick="showPage('All-Anime')">All Anime</a></li>
+                <li><a href="#" onclick="showPage('Top-Airing')">Top airing</a></li>
+                <li><a href="#" onclick="showPage('Top-Upcoming')">Top Upcoming</a></li>
+                <li><a href="#" onclick="showPage('Most-Popular')">Most Popular</a></li>
+            </ul>
+        </nav>
+        <div class="inTwoSide" id="All-Anime">
+            <div class="title">Top Anime Series</div> 
+            <button class="next-list">Next 50 ></button>
+        </div>
+        <!-- <div class="inTwoSide" id="Top-Airing" style="display: none;">
+            <div class="title">Top Airing Anime</div> 
+            <button class="next-list">Next 50 ></button>
+        </div>
+        <div class="inTwoSide" id="Top-Upcoming" style="display: none;">
+            <div class="title">Top Upcoming Anime</div> 
+            <button class="next-list">Next 50 ></button>
+        </div>
+        <div class="inTwoSide" id="Most-Popular" style="display: none;">
+            <div class="title">Top Anime by Popularity</div> 
+            <button class="next-list">Next 50 ></button>
+        </div> -->
+        <div id="top-anime-list">
+            <table id="top-animes">
+                <tr class="title">
+                    <th>Rank</th>
+                    <th>Title</th>
+                    <th>Score</th>
+                    <th>Your Score</th>
+                    <th>Status</th>
+                </tr>
+                <tr id="single-row">
+                    <th class="rank">1</th>
+                    <th class="title">
+                        <div class="title-content">
+                            <img src="./assets/top1.webp" alt="Sousou no Frieren">
+                            <div class="info">
+                                <p class="name">Sousou no Frieren</p>
+                                <p>TV (28 eps)</p>
+                                <p>Sep 2023 - Mar 2024</p>
+                                <p>682,172 members</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="score-th"><p>9.39</p></th>
+                    <th class="your-score"><p>N/A</p></th>
+                    <th class="status"><button id="addToKist">Add to list</button></th>
+                </tr>
+                <tr id="single-row">
+                    <th class="rank">2</th>
+                    <th class="title">
+                        <div class="title-content">
+                            <img src="./assets/topAnime/top2.webp" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="info">
+                                <p class="name">Fullmetal Alchemist: Brotherhood</p>
+                                <p>TV (64 eps)</p>
+                                <p>Apr 2009 - Jul 2010</p>
+                                <p>3,337,263 members</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="score-th"><p>9.09</p></th>
+                    <th class="your-score"><p>N/A</p></th>
+                    <th class="status"><button id="addToKist">Add to list</button></th>
+                </tr>
+                <tr id="single-row">
+                    <th class="rank">3</th>
+                    <th class="title">
+                        <div class="title-content">
+                            <img src="./assets/topAnime/top3.webp" alt="Steins;Gate">
+                            <div class="info">
+                                <p class="name">Steins;Gate</p>
+                                <p>TV (24 eps)</p>
+                                <p>Apr 2011 - Sep 2011</p>
+                                <p>2,557,941 members</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="score-th"><p>9.07</p></th>
+                    <th class="your-score"><p>N/A</p></th>
+                    <th class="status"><button id="addToKist">Add to list</button></th>
+                </tr>
+                <tr id="single-row">
+                    <th class="rank">4</th>
+                    <th class="title">
+                        <div class="title-content">
+                            <img src="./assets/topAnime/top4.webp" alt="Gintama°">
+                            <div class="info">
+                                <p class="name">Gintama°</p>
+                                <p>TV (51 eps)</p>
+                                <p>Apr 2015 - Mar 2016</p>
+                                <p>629,290 members</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="score-th"><p>9.06</p></th>
+                    <th class="your-score"><p>N/A</p></th>
+                    <th class="status"><button id="addToKist">Add to list</button></th>
+                </tr>
+                <tr id="single-row">
+                    <th class="rank">1</th>
+                    <th class="title">
+                        <div class="title-content">
+                            <img src="./assets/top1.webp" alt="Sousou no Frieren">
+                            <div class="info">
+                                <p class="name">Sousou no Frieren</p>
+                                <p>TV (28 eps)</p>
+                                <p>Sep 2023 - Mar 2024</p>
+                                <p>682,172 members</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="score-th"><p>9.39</p></th>
+                    <th class="your-score"><p>N/A</p></th>
+                    <th class="status"><button id="addToKist">Add to list</button></th>
+                </tr>
+                <tr id="single-row">
+                    <th class="rank">2</th>
+                    <th class="title">
+                        <div class="title-content">
+                            <img src="./assets/topAnime/top2.webp" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="info">
+                                <p class="name">Fullmetal Alchemist: Brotherhood</p>
+                                <p>TV (64 eps)</p>
+                                <p>Apr 2009 - Jul 2010</p>
+                                <p>3,337,263 members</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="score-th"><p>9.09</p></th>
+                    <th class="your-score"><p>N/A</p></th>
+                    <th class="status"><button id="addToKist">Add to list</button></th>
+                </tr>
+                <tr id="single-row">
+                    <th class="rank">3</th>
+                    <th class="title">
+                        <div class="title-content">
+                            <img src="./assets/topAnime/top3.webp" alt="Steins;Gate">
+                            <div class="info">
+                                <p class="name">Steins;Gate</p>
+                                <p>TV (24 eps)</p>
+                                <p>Apr 2011 - Sep 2011</p>
+                                <p>2,557,941 members</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="score-th"><p>9.07</p></th>
+                    <th class="your-score"><p>N/A</p></th>
+                    <th class="status"><button id="addToKist">Add to list</button></th>
+                </tr>
+                <tr id="single-row">
+                    <th class="rank">4</th>
+                    <th class="title">
+                        <div class="title-content">
+                            <img src="./assets/topAnime/top4.webp" alt="Gintama°">
+                            <div class="info">
+                                <p class="name">Gintama°</p>
+                                <p>TV (51 eps)</p>
+                                <p>Apr 2015 - Mar 2016</p>
+                                <p>629,290 members</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="score-th"><p>9.06</p></th>
+                    <th class="your-score"><p>N/A</p></th>
+                    <th class="status"><button id="addToKist">Add to list</button></th>
+                </tr>
+            </table>
+        </div>
+        <script src="./scripts/contentChanger.js"></script>
+    </main>
+</body>
+</html>
