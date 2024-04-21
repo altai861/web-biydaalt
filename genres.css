@@ -149,7 +149,7 @@ input {
 /* anime detail */
 .detail{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 #alphabet {
     display: flex;
@@ -165,10 +165,25 @@ input {
     background-color: rgb(187, 219, 247);
 }
 
+.anime{
+    display: flex;
+}
+#leftAnime{
+    float: left;
+    width: 31%;
+}
+#middleAnime{
+    width: 31%;
+}
+#rightAnime{
+    float: right;
+    width: 32%;
+}
+
 .single-anime {
     border: 1px solid grey;
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px;
 }
 .detail-head{
@@ -178,25 +193,46 @@ input {
     margin-bottom: 0;
 }
 .detail-nav{
-    list-style: none;
-}
-.detail-nav li{
     display: flex;
+    padding-right: 0;
+    justify-content: space-between;
 }
-.detail-nav li a{
-    text-decoration: none;
-}
+
 .detail-footer{
     display: flex;
     justify-content: space-between;
 }
 /* scroll */
-.scrollable-container {
-    height: 220px; /* Set the height of the container */
+.scrollable-container1 {
+    width: 150px;
+    height: 230px; /* Set the height of the container */
     overflow-y: auto; /* Enable vertical scrollbar */
     padding: 10px; /* Optional: Add padding for better appearance */
     border: 1px solid #ccc; /* Optional: Add border for better appearance */
 }
+.scrollable-container {
+    width: 140px;
+    height: 230px; /* Set the height of the container */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    padding: 10px; /* Optional: Add padding for better appearance */
+    border: 1px solid #ccc; /* Optional: Add border for better appearance */
+}
+
+.scroll-x1{
+    width: 150px;
+    height: 100px;
+    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.scroll-x{
+    width: 140px;
+    height: 100px;
+    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
 
 #footer {
     margin-top: 20px;
