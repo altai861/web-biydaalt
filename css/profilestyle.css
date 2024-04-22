@@ -1,0 +1,111 @@
+#profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(177, 205, 231);
+    padding: 1px 20px;
+    margin: 0;
+}
+#profile-header a {
+    text-decoration: underline;
+}
+
+
+#profile-main {
+    padding: 20px;
+    display: flex;
+}
+
+#left-side {
+    padding: 10px;
+    border-right: 1px solid grey;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-side-menu-element {
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    color: rgb(49, 49, 176);
+}
+
+.left-side-menu-element:hover {
+    background-color: rgb(223, 222, 222);
+}
+
+.friend-element {
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.friend-element:hover {
+    background-color: beige;
+}
+
+#right-side {
+    padding: 10px;
+    overflow: scroll;
+}
+
+#watching-now {
+    background-color: rgb(178, 242, 161);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+#favorites {
+    margin-top: 10px;
+    background-color: rgb(255, 226, 168);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.watching-now-anime {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: azure;
+    margin: 10px;
+}
+
+.watching-now-anime img {
+    width: 175px;
+}
+
+.anime-container {
+    display: flex;
+    overflow: hidden;
+}
+
+
+.seemorebutton {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.seemorebutton:hover {
+    background-color: #0056b3;
+}
+
+#history {
+    background-color: #aaf4ff;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: scroll;
+}

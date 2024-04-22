@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/myfriends.css">
+    <title>My Friends</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <header id="header">
+        <div id="header-logo-div">
+            <a href="/"><h1 id="mal-logo">MyAnimeList</h1></a>
+        </div>
+        <div id="profile-section">
+            <div id="profile-name-sec">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <p id="profile-name">Arutai</p>
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+                <div id="profile-dropdown">
+                    <a href="./profile.html"><div class="profile-dropdown-element">Profile</div></a>
+                    <a href="./myfriends.html"><div class="profile-dropdown-element">My Friends</div></a>
+                    <a href="./myclubs.html"><div class="profile-dropdown-element">>My Clubs</div></a>
+                    <a href="./myreviews.html"><div class="profile-dropdown-element">My Reviews</div></a>
+                    <a href="./myinterest.html"><div class="profile-dropdown-element">My Interest Stacks</div></a>
+                    <a href="./myblogs.html"><div class="profile-dropdown-element">My Blogs</div></a>
+                    <a href="./profilesettings.html"><div class="profile-dropdown-element">Profile Settings</div></a>
+                </div>
+            </div>
+            <div id="profile-picture-sec"><a href="./profile.html"><img src="../assets/profile.webp"></a></div>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="../search.html">Anime search</a>
+                <a href="#">Top anime</a>
+                <a href="#">Seasonal anime</a>
+                <a href="#">Reviews</a>
+                <a href="#">Anime detail</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div id="search-input">
+            <form>
+                <input id="navbar-search-input" placeholder="Search anime...">
+                <button type="submit">
+                    <img src="../assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <main id="main">
+        <div>
+            <h2>My Friends</h2>
+            <div id="friends-menu">
+                <div class="friends-menu-item">My Friends</div>
+                <div class="friends-menu-item">Pending Requests</div>
+                <div class="friends-menu-item">Add Friend</div>
+                <div class="friends-menu-item">Remove Friend</div>
+            </div>
+            <div id="friends-container">
+                <div class="single-friend">
+                    <img src="../assets/character-staff/4-0.webp" alt="tseku profile picture">
+                    <div class="friend-text-con">
+                        <p>Tseku</p>
+                        <p>Online 2 hours ago</p>
+                    </div>
+                </div>
+                <div class="single-friend">
+                    <img src="../assets/character-staff/8-0.webp" alt="tsundgerhen profile picture">
+                    <div class="friend-text-con">
+                        <div>Tsundgerhen</div>
+                        <div>Online 30 minutes ago</div>
+                    </div>
+                </div>
+            </div>
+            <div id="pending-requests">
+                <div class="single-friend">
+                    <img src="../assets/character-staff/1-0.webp" alt="tsundgerhen profile picture">
+                    <div class="friend-text-con">
+                        <div>Lebron James</div>
+                        <div>Sent friend request yesterday</div>
+                    </div>
+                </div>
+            </div>
+            <div id="add-friend">
+                <div id="search-con">
+                    <h4>Search for a friend</h4>
+                    <p>Enter the name of the person you would like to send a friend request to</p>
+                    <input type="text" id="name-search" placeholder="Member name">
+                    <button id="find-button">Find friend</button>
+                </div>
+            </div>
+            <div id="remove-friend">
+                <div id="search-con">
+                    <h4>Remove a friend</h4>
+                    <p>Type the name of the friend you would like to remove</p>
+                    <input type="text" id="name-search" placeholder="Member name">
+                    <button id="find-button">Remove Friend</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>MyAnimeList.net is a property of MyAnimeList Co.,Ltd. ©2024 All Rights Reserved.</p>
+    </footer>
+    <script src="../scripts/myfriends.js"></script>
+</body>
+</html>

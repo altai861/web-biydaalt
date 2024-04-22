@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/profilestyle.css">
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <header id="header">
+        <div id="header-logo-div">
+            <a href="/"><h1 id="mal-logo">MyAnimeList</h1></a>
+        </div>
+        <div id="profile-section">
+            <div id="profile-name-sec">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <p id="profile-name">Arutai</p>
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+                <div id="profile-dropdown">
+                    <a href="./profile.html"><div class="profile-dropdown-element">Profile</div></a>
+                    <a href="./myfriends.html"><div class="profile-dropdown-element">My Friends</div></a>
+                    <a href="./myclubs.html"><div class="profile-dropdown-element">>My Clubs</div></a>
+                    <a href="./myreviews.html"><div class="profile-dropdown-element">My Reviews</div></a>
+                    <a href="./myinterest.html"><div class="profile-dropdown-element">My Interest Stacks</div></a>
+                    <a href="./myblogs.html"><div class="profile-dropdown-element">My Blogs</div></a>
+                    <a href="./profilesettings.html"><div class="profile-dropdown-element">Profile Settings</div></a>
+                </div>
+            </div>
+            <div id="profile-picture-sec"><a href="./profile.html"><img src="../assets/profile.webp"></a></div>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="../search.html">Anime search</a>
+                <a href="#">Top anime</a>
+                <a href="#">Seasonal anime</a>
+                <a href="#">Reviews</a>
+                <a href="#">Anime detail</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div id="search-input">
+            <form>
+                <input id="navbar-search-input" placeholder="Search anime...">
+                <button type="submit">
+                    <img src="../assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="profile-header">
+            <h3>Altai's Profile</h3>
+            <a href="./profilesettings.html"><i class="material-icons">settings</i>Profile Settings</a>
+        </div>
+        <div id="profile-main">
+            <div id="left-side">
+                <img src="../assets/character-staff/1-1.jpeg" width="200px">
+                <div id="icons">
+                    <button>
+                        <i class="material-icons">comment</i>
+                    </button>
+                    <button>
+                        <i class="material-icons">loyalty</i>
+                    </button>
+                </div>
+                <hr>
+                <div style="display: flex; justify-content: space-between; align-items: center">
+                    <h4>Last Online</h4>
+                    <h4 style="color: green">Now</h4>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h4>Joined</h4>
+                    <p>Apr 14 2024</p>
+                </div>
+                <hr>
+                <div>
+                    <a href="#history">
+                        <div class="left-side-menu-element">
+                            <h5>History</h5>
+                        </div>
+                    </a>
+                    <a href="#favorite">
+                        <div class="left-side-menu-element">
+                            <h5>Favorites</h5>
+                        </div>
+                    </a>
+                    <a href="#watching-now">
+                        <div class="left-side-menu-element">
+                            <h5>Watching Now</h5>
+                        </div>
+                    </a>
+                </div>
+                <hr>
+                <div>
+                    <div class="left-side-menu-element">
+                        <h5>Reviews</h5>
+                    </div>
+                    <div class="left-side-menu-element">
+                        <h5>Recommendations</h5>
+                    </div>
+                    <div class="left-side-menu-element">
+                        <h5>Interest Stacks</h5>
+                    </div>
+                    <div class="left-side-menu-element">
+                        <h5>Blog Posts</h5>
+                    </div>
+                    <div class="left-side-menu-element">
+                        <h5>Clubs</h5>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items:center">
+                        <h4>Friends</h4>
+                        <a href="myfriends.html">All (2)</a>
+                    </div>
+                    <hr style="color: rgb(213, 211, 211)">
+                    <div>
+                        <div class="friend-element">
+                            <div style="text-align: center;">
+                                <img src="../assets/character-staff/10-1.jpeg" style="width: 30px;border-radius: 50%;">
+                                <h4>Tseku</h4>
+                            </div>
+                            <p style="color: rgb(52, 51, 51)">Online 2 hours ago</p>
+                        </div>
+                        <hr>
+                        <div class="friend-element">
+                            <div style="text-align: center;">
+                                <img src="../assets/character-staff/2-0.webp" style="width: 30px;border-radius: 50%;">
+                                <h4>Tsundgerhen</h4>
+                            </div>
+                            <p style="color: rgb(52, 51, 51)">Online 10 minutes ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-side">
+                <div id="watching-now">
+                    <h3>Watching Now</h3>
+                    <div class="anime-container" id="watching-now-container">
+                        <div class="watching-now-anime">
+                            <img src="../assets/FullMetal.webp" alt="Full Metal Alchemist Image">
+                            <h4>Full Metal Alchemist</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/AOT.webp" alt="Full Metal Alchemist Image">
+                            <h4>Attack on Titan</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/OnepunchMan.jpg" alt="Full Metal Alchemist Image">
+                            <h4>One Punch Man</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/ta-5.webp" alt="Full Metal Alchemist Image">
+                            <h4>My Hero Academia</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/FullMetal.webp" alt="Full Metal Alchemist Image">
+                            <h4>Full Metal Alchemist</h4>
+                        </div>
+                        
+                    </div>
+                    <div style="display:flex; justify-content: flex-end;">
+                        <button class="seemorebutton" id="seemorebuttonnow">See more</button>
+                    </div>                
+                </div>
+                <div id="favorites">
+                    <h3>My Favorites</h3>
+                    <div class="anime-container" id="favorite-container">
+                        <div class="watching-now-anime">
+                            <img src="../assets/FullMetal.webp" alt="Full Metal Alchemist Image">
+                            <h4>Full Metal Alchemist</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/AOT.webp" alt="Full Metal Alchemist Image">
+                            <h4>Attack on Titan</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/OnepunchMan.jpg" alt="Full Metal Alchemist Image">
+                            <h4>One Punch Man</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/ta-5.webp" alt="Full Metal Alchemist Image">
+                            <h4>My Hero Academia</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/FullMetal.webp" alt="Full Metal Alchemist Image">
+                            <h4>Full Metal Alchemist</h4>
+                        </div>
+                        
+                    </div>
+                    <div style="display:flex; justify-content: flex-end;">
+                        <button class="seemorebutton" id="seemorebuttonfav">See more</button>
+                    </div>    
+                </div>
+                <div id="history">
+                    <h3>History</h3>
+                    <div class="anime-container" id="history-container">
+                        <div class="watching-now-anime">
+                            <img src="../assets/FullMetal.webp" alt="Full Metal Alchemist Image">
+                            <h4>Full Metal Alchemist</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/AOT.webp" alt="Full Metal Alchemist Image">
+                            <h4>Attack on Titan</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/OnepunchMan.jpg" alt="Full Metal Alchemist Image">
+                            <h4>One Punch Man</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/ta-5.webp" alt="Full Metal Alchemist Image">
+                            <h4>My Hero Academia</h4>
+                        </div>
+                        <div class="watching-now-anime">
+                            <img src="../assets/FullMetal.webp" alt="Full Metal Alchemist Image">
+                            <h4>Full Metal Alchemist</h4>
+                        </div>
+                        
+                    </div>
+                    <div style="display:flex; justify-content: flex-end;">
+                        <button class="seemorebutton" id="seemorebuttonhis">See more</button>
+                    </div>
+                </div>
+                <div id="comments">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>MyAnimeList.net is a property of MyAnimeList Co.,Ltd. ©2024 All Rights Reserved.</p>
+    </footer>
+    <script src="../scripts/logged-in-index.js"></script>
+</body>
+</html>
