@@ -128,10 +128,6 @@ main {
     flex-grow: 1; /* Take up remaining space */
     text-align: right; /* Align input to the right */
 }
-#search-input2{
-    margin-top: 20px;
-    text-align: center;
-}
 input {
     width: 30%;
     padding: 5px;
@@ -141,107 +137,94 @@ input {
     color: #333;
 }
 
-#main-content {
-    display: flex;
-    overflow: scroll;
+/* main */
+#backgroundImg{
+    background-image: url(../../assets/background1.png);
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+}
+.h{
+    color: white;
+    text-align: center;
+    padding-top: 110px;
+    margin: 0;
+}
+.p{
+    color: white;
+    text-align: center;
 }
 
-/* anime detail */
-.detail{
-    display: flex;
-    /* flex-wrap: wrap; */
-}
-#alphabet {
-    display: flex;
-    justify-content: center;
-}
-.alphabet-element {
-    color: rgb(115, 114, 114);
-    padding: 5px;
-    font-size: smaller;
-}
 
-.alphabet-element:hover {
-    background-color: rgb(187, 219, 247);
-}
-
-.anime{
-    display: flex;
-}
-#leftAnime{
-    float: left;
-    width: 31%;
-}
-#middleAnime{
-    width: 31%;
-}
-#rightAnime{
-    float: right;
-    width: 32%;
-}
-
-.single-anime {
+.middleBorder{
     border: 1px solid grey;
     border-radius: 10px;
-    /* padding: 10px; */
-    margin: 10px;
+    padding-top: 10px;
 }
-.detail-head{
+.middleHead{
     text-align: center;
+}
+.leftImg{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.rightImg{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.list{
+    display: flex;
+}
+.text{
+    margin: 0;
+    margin-right: 170px;
+    width: 80px;
+    height: 40px;
+}
+.secondMiddleHead{
+    text-align: center;
+    justify-content: center;
+}
+.ThirdHead{
+    text-align: center;
+}
+.button{
+    border: 1px solid grey;
+    width: 400px;
+    background-color: #0080FF;
+    text-align: center;
+    margin-left: 30%;
+}
+.lastpicture{
+    text-align: center;
+}
+
+/* footer */
+.footerItems{
+    display: flex;
+}
+.followUs{
+    display: flex;
+    margin-left: 20%;
+}
+.items{
+    margin-left: 10px;
+}
+.centerItems{
+    text-align: center;
+    margin-top: 40px;
+}
+.clearUnderlane{
     text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-left: 15px;
 }
-.detail-nav{
+.underItem{
     display: flex;
-    padding-right: 0;
-    justify-content: space-between;
-}
-
-.detail-footer{
-    display: flex;
-    justify-content: space-between;
-}
-/* scroll */
-.scrollable-container1 {
-    width: 150px;
-    height: 230px; /* Set the height of the container */
-    overflow-y: auto; /* Enable vertical scrollbar */
-    padding: 10px; /* Optional: Add padding for better appearance */
-    border: 1px solid #ccc; /* Optional: Add border for better appearance */
-}
-.scrollable-container {
-    width: 140px;
-    height: 230px; /* Set the height of the container */
-    overflow-y: auto; /* Enable vertical scrollbar */
-    padding: 10px; /* Optional: Add padding for better appearance */
-    border: 1px solid #ccc; /* Optional: Add border for better appearance */
-}
-
-.scroll-x1{
-    width: 150px;
-    height: 100px;
-    overflow-x: auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-.scroll-x{
-    width: 140px;
-    height: 100px;
-    overflow-x: auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-
-#footer {
+    margin-left: 25%;
     margin-top: 20px;
-    padding: 20px;
-    background-color: rgb(2, 2, 151);
-    text-align: center;
 }
-
-#footer p{
-    font-size: 10px;
-    color:white;
+.underItem a{
+    text-decoration: none;
 }

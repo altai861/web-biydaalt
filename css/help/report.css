@@ -128,120 +128,103 @@ main {
     flex-grow: 1; /* Take up remaining space */
     text-align: right; /* Align input to the right */
 }
-#search-input2{
-    margin-top: 20px;
-    text-align: center;
-}
+
 input {
     width: 30%;
     padding: 5px;
 }
 
-#nav{
-    color: #333;
+
+/* main */
+#forums{
+    background-color: #b4b4b4;
+    color: white;
+    font-size: 20px;
+}
+.secondMain{
+    border: 1px solid rgb(174, 173, 173);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.pp{
+    text-decoration: none;
+}
+.third{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.textinput{
+    width: 330%;
+}
+.button{
+    border: 1px solid rgb(174, 173, 173);
+    background-color: slateblue;
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 20px;
+}
+.button a{
+    color: white;
+    text-decoration: none;
 }
 
-#main-content {
-    display: flex;
-    overflow: scroll;
-}
 
-/* anime detail */
-.detail{
-    display: flex;
-    /* flex-wrap: wrap; */
-}
-#alphabet {
+/* not footer but footer xD */
+.justFlex{
     display: flex;
     justify-content: center;
-}
-.alphabet-element {
-    color: rgb(115, 114, 114);
-    padding: 5px;
-    font-size: smaller;
-}
-
-.alphabet-element:hover {
-    background-color: rgb(187, 219, 247);
-}
-
-.anime{
-    display: flex;
-}
-#leftAnime{
-    float: left;
-    width: 31%;
-}
-#middleAnime{
-    width: 31%;
-}
-#rightAnime{
-    float: right;
-    width: 32%;
-}
-
-.single-anime {
-    border: 1px solid grey;
-    border-radius: 10px;
-    /* padding: 10px; */
-    margin: 10px;
-}
-.detail-head{
     text-align: center;
+    margin-top: 20px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top a{
     text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 0;
 }
-.detail-nav{
+.iteems{
+    float: left;
+}
+.iteems a{
+    text-decoration: none;
+}
+
+
+/* footer */
+.footerItems{
     display: flex;
-    padding-right: 0;
-    justify-content: space-between;
+    margin-top: 40px;
 }
-
-.detail-footer{
+.followUs{
     display: flex;
-    justify-content: space-between;
+    margin-left: 20%;
 }
-/* scroll */
-.scrollable-container1 {
-    width: 150px;
-    height: 230px; /* Set the height of the container */
-    overflow-y: auto; /* Enable vertical scrollbar */
-    padding: 10px; /* Optional: Add padding for better appearance */
-    border: 1px solid #ccc; /* Optional: Add border for better appearance */
+.items{
+    margin-left: 10px;
 }
-.scrollable-container {
-    width: 140px;
-    height: 230px; /* Set the height of the container */
-    overflow-y: auto; /* Enable vertical scrollbar */
-    padding: 10px; /* Optional: Add padding for better appearance */
-    border: 1px solid #ccc; /* Optional: Add border for better appearance */
-}
-
-.scroll-x1{
-    width: 150px;
-    height: 100px;
-    overflow-x: auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-.scroll-x{
-    width: 140px;
-    height: 100px;
-    overflow-x: auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-
-#footer {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: rgb(2, 2, 151);
+.p{
     text-align: center;
 }
-
-#footer p{
-    font-size: 10px;
-    color:white;
+#centerItems{
+    justify-content: center;
+}
+#centerItems a{
+    text-decoration: none;
+    margin-left: 15px;
+}
+.clearUnderlane{
+    text-decoration: none;
+}
+.underItem{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.underItem a{
+    text-decoration: none;
 }

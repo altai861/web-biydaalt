@@ -153,7 +153,7 @@
 
         <!--animes--> 
         <div class="detail">
-            <div style="margin-right: 10px;" class="single-anime">
+            <div class="single-anime" id="leftAnime">
                 <div class="detail-head">
                     <div>
                         <a style="color: blue;" href="animeDetial.html">Shingeki no Kyojin</a>
@@ -170,27 +170,27 @@
                     <div><img src="assets/hide.png" alt="hide" width="20px"></div>
                 </div>
                 <div class="detail-nav">
-                    <li>
-                        <ol>Action</ol>
-                        <ol>AwardWinning</ol>
-                        <ol>Drama</ol>
-                        <ol>Suspense</ol>
-                    </li>
+                    <div>Action</div>
+                    <div>AwardWinning</div>
+                    <div>Drama</div>
+                    <div>Suspense</div>
                 </div>
-                <div style="display: flex;">
+                <div class="anime">
                     <div>
-                        <a href="animeDetial.html"><img src="assets/AOT.webp" alt="AOT"></a>
+                        <a href="animeDetial.html"><img src="assets/AOT.webp" alt="AOT" width="160px" height="350px"></a>
                     </div>
-                    <div >
+                    <div>
                         <div class="scrollable-container">
                             <p>Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.
                                 After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Eren, his adopted sister Mikasa Ackerman, and his childhood friend Armin Arlert join the brutal war against the Titans and race to discover a way of defeating them before the last walls are breached.
-                                </p>
+                            </p>
                         </div>
-                        <div><strong>Studio:</strong>Wit Studio</div>
-                        <div><strong>Sourse:</strong>manga</div>
-                        <div><strong>Themes:</strong>Gore,Military,Survival</div>
-                        <div><strong>Demographic:</strong>Shounen</div>
+                        <div class="scroll-x">
+                            <div><strong>Studio:</strong>Wit Studio</div>
+                            <div><strong>Sourse:</strong>manga</div>
+                            <div><strong>Themes:</strong>Gore,Military,Survival</div>
+                            <div><strong>Demographic:</strong>Shounen</div>
+                        </div>
                     </div>
                 </div>
                 <div class="detail-footer">
@@ -210,7 +210,7 @@
 
             <!-- second anime -->
 
-            <div style="margin-right: 10px;" class="single-anime" >
+            <div id="middleAnime" class="single-anime" >
                 <div class="detail-head">
                     <div>
                         <a style="color: blue;" href="animeDetial.html">Fullmetal Alchemist:Brotherhood</a>
@@ -227,16 +227,14 @@
                     <div><img src="assets/hide.png" alt="hide" width="20px"></div>
                 </div>
                 <div class="detail-nav">
-                    <li>
-                        <ol><a style="color: black; margin-left: 80px;" href="#">Action</a></ol>
-                        <ol><a style="color: black;" href="#">Adventure</a></ol>
-                        <ol><a style="color: black;" href="#">Drama</a></ol>
-                        <ol><a style="color: black;" href="#">Fantasy</a></ol>
-                    </li>
+                    <div>Action</div>
+                    <div>Adventure</div>
+                    <div>Drama</div>
+                    <div>Fantasy</div>
                 </div>
-                <div style="display: flex;">
+                <div class="anime">
                     <div>
-                        <img src="assets/FullMetal.webp" alt="FullMetal" width="" height="350">
+                        <img src="assets/FullMetal.webp" alt="FullMetal" width="160" height="350">
                     </div>
                     <div >
                         <div class="scrollable-container">
@@ -245,10 +243,12 @@
                                 As Edward becomes an infamous alchemist and gains the nickname "Fullmetal," the boys' journey embroils them in a growing conspiracy that threatens the fate of the world.
                                 </p>
                         </div>
-                        <div><strong>Studio:</strong>Bones</div>
-                        <div><strong>Sourse:</strong>Manga</div>
-                        <div><strong>Themes:</strong>Military</div>
-                        <div><strong>Demographic:</strong>Shounen</div>
+                        <div class="scroll-x">
+                            <div><strong>Studio:</strong>Bones</div>
+                            <div><strong>Sourse:</strong>Manga</div>
+                            <div><strong>Themes:</strong>Military</div>
+                            <div><strong>Demographic:</strong>Shounen</div>
+                        </div>
                     </div>
                 </div>
                 <div class="detail-footer">
@@ -258,7 +258,7 @@
                     </div>
                     <div style="display: flex;">
                         <img style="margin-top: 20px;" src="assets/profile.webp" alt="profile" width="20px" height="15px">
-                        <p>3.3M</p>
+                        <div><p>3.3M</p></div>
                     </div>
                     <div>
                         <button style="margin-top: 17px; background-color: #0073ff;" type="button" onclick="alert('A successful addition!')">Add to List</button>
@@ -267,7 +267,7 @@
             </div>
 
             <!-- 3th anime -->
-            <div class="single-anime">
+            <div class="single-anime" id="rightAnime">
                 <div class="detail-head">
                     <div style="margin-bottom: 0;">
                         <a style="color: blue;" href="animeDetial.html">One Punch Man</a>
@@ -284,31 +284,31 @@
                     <div><img src="assets/hide.png" alt="hide" width="20px"></div>
                 </div>
                 <div class="detail-nav" >
-                    <li>
-                        <ol><a style="color: black; margin-left: 150px;" href="#">Action</a></ol>
-                        <ol><a style="color: black;" href="#">Comedy</a></ol>
-                    </li>
+                    <div>Action</div>
+                    <div>Comedy</div>
                 </div>
-                <div style="display: flex;">
+                <div class="anime">
                     <div>
-                        <img src="assets/OnepunchMan.jpg" alt="OnePunchMan" height="350">
+                        <img src="assets/OnepunchMan.jpg" alt="OnePunchMan" height="350" width="160">
                     </div>
                     <div >
-                        <div class="scrollable-container">
+                        <div class="scrollable-container1">
                             <p>The seemingly unimpressive Saitama has a rather unique hobby: being a hero. In order to pursue his childhood dream, Saitama relentlessly trained for three years, losing all of his hair in the process. Now, Saitama is so powerful, he can defeat any enemy with just one punch. However, having no one capable of matching his strength has led Saitama to an unexpected problem—he is no longer able to enjoy the thrill of battling and has become quite bored.
                                 One day, Saitama catches the attention of 19-year-old cyborg Genos, who witnesses his power and wishes to become Saitama's disciple. Genos proposes that the two join the Hero Association in order to become certified heroes that will be recognized for their positive contributions to society. Saitama, who is shocked that no one knows who he is, quickly agrees. Meeting new allies and taking on new foes, Saitama embarks on a new journey as a member of the Hero Association to experience the excitement of battle he once felt.
-                                </p>
+                            </p>
                         </div>
-                        <div><strong>Studio:</strong>Madhouse</div>
-                        <div><strong>Sourse:</strong>Web,manga</div>
-                        <div><strong>Themes:</strong>Adult,Cast,Parody,Super Power</div>
-                        <div><strong>Demographic:</strong>Seinen</div>
+                        <div class="scroll-x1">
+                            <div><strong>Studio:</strong>Madhouse</div>
+                            <div><strong>Sourse:</strong>Web,manga</div>
+                            <div><strong>Themes:</strong>Adult,Cast,Parody,Super Power</div>
+                            <div><strong>Demographic:</strong>Seinen</div>
+                        </div>
                     </div>
                 </div>
                 <div class="detail-footer">
                     <div style="display: flex;">
-                        <img style="margin-top: 17px;" src="assets/star.webp" alt="star" width="20px" height="20px">
-                        <p>8.50</p>
+                        <div><img style="margin-top: 17px;" src="assets/star.webp" alt="star" width="20px" height="20px"></div>
+                        <div><p>8.50</p></div>
                     </div>
                     <div style="display: flex;">
                         <img style="margin-top: 20px;" src="assets/profile.webp" alt="profile" width="20px" height="15px">
