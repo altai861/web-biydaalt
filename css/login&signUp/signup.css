@@ -1,0 +1,178 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+main {
+    border-left: 0.7px solid rgb(166, 166, 166);
+    border-right: 0.7px solid rgb(174, 173, 173);
+    padding: 10px;
+}
+#login{
+    border-bottom: 1px solid rgb(174, 173, 173);
+    margin: 0;
+    padding: 0;
+}
+#mainBorder{
+    margin-top: 20px;
+    border: 1px solid rgb(174, 173, 173);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.headTxt{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+}
+.middleLine{
+    border-bottom: 1px solid rgb(174, 173, 173);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.signUp{
+    text-align: center;
+    justify-content: center;
+}
+.loginWith{
+    text-align: center;
+}
+.loginitems{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.firstLogin{
+    display: flex;
+    font-size: 25px;
+    border: 1px solid rgb(174, 173, 173);
+    border-radius: 5px;
+    width: 140px;
+    text-align: center;
+    justify-content: center;
+}
+.firstLogin a{
+    text-decoration: none;
+}
+.secondlogin{
+    display: flex;
+    margin-left: 2%;
+    font-size: 25px;
+    border: 1px solid rgb(174, 173, 173);
+    border-radius: 5px;
+    width: 140px;
+    text-align: center;
+    justify-content: center;
+}
+.secondlogin a{
+    text-decoration: none;
+}
+#div2{
+    margin-top: 10px;
+}
+.spase{
+    margin-left: 3%;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#leftline{
+    margin-top: 10px;
+    width: 40%;
+}
+#rightline{
+    margin-top: 10px;
+    width: 40%;
+}
+#middleOr{
+    margin-top: 6px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.loginInput{
+    border: 1px rgb(174, 173, 173);
+    width: 150%;
+    margin-left: 25%;
+}
+.username{
+    margin-left: 25%;
+}
+.password{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 28%;
+}
+.show{
+    display: flex;
+}
+.stayLogged{
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.date{
+    display: flex;
+}
+.login{
+    border: 1px rgb(174, 173, 173);
+    border-radius: 3px;
+    background-color: blue;
+    width: 35%;
+    margin-left: 35%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 30px;
+}
+.login a{
+    color: white;
+    text-decoration: none;
+}
+#pp{
+    color: #909090;
+    text-align: center;
+}
+.terms{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0;
+}
+
+.forget{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.forget a{
+    text-decoration: none;
+}
+#forget{
+    border-right: 1px rgb(174, 173, 173);
+}
+#rightForget{
+    margin-left: 2%;
+}
+.signup{
+    border: 1px rgb(174, 173, 173);
+    border-radius: 3px;
+    background-color: grey;
+    width: 35%;
+    margin-left: 35%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.signup a{
+    color: white;
+    text-decoration: none;
+}
