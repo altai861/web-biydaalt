@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <title>MyAnimeList</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <header id="header">
+        <div id="header-logo-div">
+            <a href="./index.html"><h1 id="mal-logo">MyAnimeList</h1></a>
+        </div>
+        <div id="profile-section">
+            <div id="profile-name-sec">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <p id="profile-name">Arutai</p>
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+                <div id="profile-dropdown">
+                    <a href="./profile/profile.html"><div class="profile-dropdown-element">Profile</div></a>
+                    <a href="./profile/myfriends.html"><div class="profile-dropdown-element">My Friends</div></a>
+                    <a href="./profile/myclubs.html"><div class="profile-dropdown-element">>My Clubs</div></a>
+                    <a href="./profile/myreviews.html"><div class="profile-dropdown-element">My Reviews</div></a>
+                    <a href="./profile/myinterest.html"><div class="profile-dropdown-element">My Interest Stacks</div></a>
+                    <a href="./profile/myblogs.html"><div class="profile-dropdown-element">My Blogs</div></a>
+                    <a href="./profile/profilesettings.html"><div class="profile-dropdown-element">Profile Settings</div></a>
+                </div>
+            </div>
+            <div id="profile-picture-sec"><a href="./profile/profile.html"><img src="./assets/profile.webp"></a></div>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="./search.html">Anime search</a>
+                <a href="#">Top anime</a>
+                <a href="#">Seasonal anime</a>
+                <a href="#">Reviews</a>
+                <a href="#">Anime detail</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div id="search-input">
+            <form>
+                <input id="navbar-search-input" placeholder="Search anime...">
+                <button type="submit">
+                    <img src="./assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="welcome">
+            <h3 id="welcoming-h3">Welcome to MyAnimeList.net!</h3>
+        </div>
+        <div id="main-content">
+            <div id="main-side">
+                <section>
+                    <h4>Spring 2024 Anime</h4>
+                    <div id="spring-2024-animes">
+                        <div class="anime-container">
+                            <img src="./assets/ta-1.webp" alt="Kono Subarashi">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Kono Subarashi</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-2.webp" alt="Kimetsu no yaiba">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Kimetsu no Yaiba</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-3.webp" alt="Tensei Shitara">
+                            <div class="image-overlay">
+                                <p class="overlay-text"><a href="./animeDetial.html">Tensei Shitara</a></p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-4.webp" alt="Mushoku Tensei">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Mushoku Tensei</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-5.webp" alt="MHA">
+                            <div class="image-overlay">
+                                <p class="overlay-text">My hero academia</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4>Last Updated Episode Videos</h4>
+                    <div id="last-updated">
+                        <div class="anime-container">
+                            <img src="./assets/ta-1.webp" alt="Kono Subarashi">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Kono Subarashi</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-2.webp" alt="Kimetsu no yaiba">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Kimetsu no Yaiba</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-3.webp" alt="Tensei Shitara">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Tensei Shitara</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-4.webp" alt="Mushoku Tensei">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Mushoku Tensei</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-5.webp" alt="MHA">
+                            <div class="image-overlay">
+                                <p class="overlay-text">My hero academia</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4>Most Popular Anime Trailers</h4>
+                    <div id="popular-trailers">
+                        <div class="anime-container">
+                            <img src="./assets/ta-1.webp" alt="Kono Subarashi">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Kono Subarashi</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-2.webp" alt="Kimetsu no yaiba">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Kimetsu no Yaiba</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-3.webp" alt="Tensei Shitara">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Tensei Shitara</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-4.webp" alt="Mushoku Tensei">
+                            <div class="image-overlay">
+                                <p class="overlay-text">Mushoku Tensei</p>
+                            </div>
+                        </div>
+                        <div class="anime-container">
+                            <img src="./assets/ta-5.webp" alt="MHA">
+                            <div class="image-overlay">
+                                <p class="overlay-text">My hero academia</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="news">
+                    <div id="news-top">
+                        <h4>Anime News</h4>
+                        <a href="#">More</a>
+                    </div>
+                    <div id="news-list">
+                        <div class="single-news">
+                            <div class="news-img-part">
+                                <img src="./assets/news-1.png" alt="news-1">
+                            </div>
+                            <div>
+                                <h5>Additional Cast of 'Tsue to Tsurugi no Wistoria' Announced</h5>
+                                <p>The Tsue to Tsurugi no Wistoria (Wistoria's Wand and Sword) special stage at AnimeJapan 2024 announced three additional cast and a key visual on Sunday (pictured). The television anime adapting Toshi Aoi's action fantasy manga will begin airing in Ju... read more</p>
+                                <p>Today, 1:18 AM by DatRandomDude | Discuss (7 comments)</p>
+                            </div>
+                        </div>
+                        <div class="single-news">
+                            <div class="news-img-part">
+                                <img src="./assets/news-1.png" alt="news-1">
+                            </div>
+                            <div>
+                                <h5>Additional Cast of 'Tsue to Tsurugi no Wistoria' Announced</h5>
+                                <p>The Tsue to Tsurugi no Wistoria (Wistoria's Wand and Sword) special stage at AnimeJapan 2024 announced three additional cast and a key visual on Sunday (pictured). The television anime adapting Toshi Aoi's action fantasy manga will begin airing in Ju... read more</p>
+                                <p>Today, 1:18 AM by DatRandomDude | Discuss (7 comments)</p>
+                            </div>
+                        </div>
+                        <div class="single-news">
+                            <div class="news-img-part">
+                                <img src="./assets/news-1.png" alt="news-1">
+                            </div>
+                            <div>
+                                <h5>Additional Cast of 'Tsue to Tsurugi no Wistoria' Announced</h5>
+                                <p>The Tsue to Tsurugi no Wistoria (Wistoria's Wand and Sword) special stage at AnimeJapan 2024 announced three additional cast and a key visual on Sunday (pictured). The television anime adapting Toshi Aoi's action fantasy manga will begin airing in Ju... read more</p>
+                                <p>Today, 1:18 AM by DatRandomDude | Discuss (7 comments)</p>
+                            </div>
+                        </div>
+                        <div class="single-news">
+                            <div class="news-img-part">
+                                <img src="./assets/news-1.png" alt="news-1">
+                            </div>
+                            <div>
+                                <h5>Additional Cast of 'Tsue to Tsurugi no Wistoria' Announced</h5>
+                                <p>The Tsue to Tsurugi no Wistoria (Wistoria's Wand and Sword) special stage at AnimeJapan 2024 announced three additional cast and a key visual on Sunday (pictured). The television anime adapting Toshi Aoi's action fantasy manga will begin airing in Ju... read more</p>
+                                <p>Today, 1:18 AM by DatRandomDude | Discuss (7 comments)</p>
+                            </div>
+                        </div>
+                        <div class="single-news">
+                            <div class="news-img-part">
+                                <img src="./assets/news-1.png" alt="news-1">
+                            </div>
+                            <div>
+                                <h5>Additional Cast of 'Tsue to Tsurugi no Wistoria' Announced</h5>
+                                <p>The Tsue to Tsurugi no Wistoria (Wistoria's Wand and Sword) special stage at AnimeJapan 2024 announced three additional cast and a key visual on Sunday (pictured). The television anime adapting Toshi Aoi's action fantasy manga will begin airing in Ju... read more</p>
+                                <p>Today, 1:18 AM by DatRandomDude | Discuss (7 comments)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="discussions">
+                    <div id="discussions-top">
+                        <h4>Recent Discussions</h4>
+                        <a href="#">More</a>
+                    </div>
+                    <div id="discussions-list">
+                        <div class="single-discussion">
+                            <h5>People who only watch "safe" anime are likely to be stupid</h5>
+                            <p>by LenRea (133 replies)</p>
+                        </div>  
+                        <div class="single-discussion">
+                            <h5>People who only watch "safe" anime are likely to be stupid</h5>
+                            <p>by LenRea (133 replies)</p>
+                        </div>
+                        <div class="single-discussion">
+                            <h5>People who only watch "safe" anime are likely to be stupid</h5>
+                            <p>by LenRea (133 replies)</p>
+                        </div>
+                        <div class="single-discussion">
+                            <h5>People who only watch "safe" anime are likely to be stupid</h5>
+                            <p>by LenRea (133 replies)</p>
+                        </div>
+                        <div class="single-discussion">
+                            <h5>People who only watch "safe" anime are likely to be stupid</h5>
+                            <p>by LenRea (133 replies)</p>
+                        </div>
+                    </div>  
+                </section>
+            </div>
+            <aside id="side-content">
+                <section id="ta-section">
+                    <div id="ta-top">
+                        <h5>Top airing anime</h5>
+                        <a href="#">More</a>
+                    </div>
+                    
+                    <div id="top-airing-animes">
+                        <ol id="top-airing-list">
+                            <li class="ta-listitem">
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </section>
+                <section id="ta-section">
+                    <div id="ta-top">
+                        <h5>Top Upcoming Animes</h5>
+                        <a href="#">More</a>
+                    </div>
+                    <div id="top-airing-animes">
+                        <ol id="top-airing-list">
+                            <li class="ta-listitem">
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/tu-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>One punch man, 3rd season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                        </ol>
+                    </div>
+
+                </section>
+                <section id="ta-section">
+                    <div id="ta-top">
+                        <h5>Most Popular Anime</h5>
+                        <a href="#">More</a>
+                    </div>
+                    <div id="top-airing-animes">
+                        <ol id="top-airing-list">
+                            <li class="ta-listitem">
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/mp-1.jpeg' alt="Shinheki no Kyojin">
+                                    </div> 
+                                     <div>
+                                        <p>Shingeki no Kyojin</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-ta">
+                                    <div class="ta-image-part">
+                                        <img src='./assets/taa-1.jpeg' alt="Kingdom 5ht season">
+                                    </div> 
+                                     <div>
+                                        <p>Kingdom 5th season</p>
+                                        <p>TV, 13eps, scored 8.82</p>
+                                        <p>28,572 members</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            
+                        </ol>
+                    </div>
+
+                </section>
+            </aside>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>MyAnimeList.net is a property of MyAnimeList Co.,Ltd. ©2024 All Rights Reserved.</p>
+    </footer>
+    <script src="./scripts/logged-in-index.js"></script>
+</body>
+</html>

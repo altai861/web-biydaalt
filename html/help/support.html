@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../assets/MyAnimeList_Logo.png" type="image/png">
-    <link rel="stylesheet" href="../../css/login&signUp/login.css">
-    <title>Log In</title>
+    <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="../../css/help/support.css">
+    <title>Supports</title>
 </head>
+
 <body>
     <header id="header">
         <div id="header-logo-div">
@@ -21,7 +23,7 @@
         <div class="navbar-element">
             Anime
             <div class="dropdown-content">
-                <a href="./search.html">Anime search</a>
+                <a href="search.html">Anime search</a>
                 <a href="#">Top anime</a>
                 <a href="#">Seasonal anime</a>
                 <a href="#">Reviews</a>
@@ -39,7 +41,7 @@
         <div class="navbar-element">
             Help
             <div class="dropdown-content">
-                <a href="#">Abous us</a>
+                <a href="aboutUs.html">Abous us</a>
                 <a href="#">Support</a>
                 <a href="#">Report</a>
                 <a href="#">Stuffs</a>
@@ -48,77 +50,75 @@
         </div>
         <div id="search-input">
             <form>
-                <input id="navbar-search-input" placeholder="Search anime...">
+                <input placeholder="Search anime...">
                 <button type="submit">
-                    <img src="./assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                    <img src="../../assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
                 </button>
             </form>
         </div>
     </nav>
-    <main id="main">
-        <div id="login"><h2>login</h2></div>
-        <!-- login border -->
-        <div id="mainBorder">
-            <div class="loginWith">
-                <h3>loginWith</h3>
-            </div>
-            <!-- loginItems -->
-            <div class="loginitems">
-                <div class="firstLogin">
-                    <div><img src="../../assets/google.webp" alt="google" width="20" height="20"></div>
-                    <div class="spase"><a href="#"> google</a></div>
-                </div>
-                <div class="secondlogin">
-                    <div><img src="../../assets/appleicon.webp" alt="apple" width="20" height="20"></div>
-                    <div class="spase"><a href="#">Apple</a></div>
-                </div>
-            </div>
-            <div class="loginitems" id="div2">
-                <div class="firstLogin">
-                    <div><img src="../../assets/facebook.png" alt="google" width="20" height="20"></div>
-                    <div class="spase"><a href="#"> facebook</a></div>
-                </div>
-                <div class="secondlogin">
-                    <div><img src="../../assets/twitter.webp" alt="apple" width="20" height="20"></div>
-                    <div class="spase"><a href="#"> Twitter</a></div>
-                </div>
-            </div>
-            <div class="or">
-                <div id="leftline"><hr></div>
-                <div id="middleOr">Or</div>
-                <div id="rightline"><hr></div>
-            </div>
-            <div>
-                <div class="username"><small>Username</small></div>
-                <div class="loginInput"><input type="text"></div>
-                <div class="password">
-                    <div><small>Password</small></div>
-                    <div class="show">
-                        <div><img src="" alt=""></div>
-                        <div><small>Show Password</small></div>
-                    </div>
-                </div>
-                <div class="loginInput"><input type="text"></div>
-                <div class="stayLogged">
-                    <div><img src="" alt=""></div>
-                    <div><small>Stay logged in?</small></div>
-                </div>
-                <div class="stayLogged">
-                    <div><img src="../../assets/exclamation mark.webp" alt="exclamation mark" width="10"></div>
-                    <div><small>Beware of phishing sites pretending to be MAL. Always check the domain is myanimelist.net before entering your password.</small></div>
-                </div>
-                <div class="login">
-                    <a href="#">Login</a>
-                </div>
-                <div class="forget">
-                    <div id="forget"><a href="#"><small>Forget username</small></a></div>
-                    <div id="rightForget"><a href="#"><small>Forget password</small></a></div>
-                </div>
-                <div class="signup">
-                    <a href="../login&signUp/signUp.html">Sign Up</a>
-                </div>
-            </div>
-        </div>
+    <div id="forums">Support</div>
+    <main class="main">
+    <div>
+        <p>Please read the following before filling out the “Contact Customer Support” form. The link to the form is located at the bottom.</p>
+        <p>
+            English is the only available language for MAL support; we are unable to answer inquiries in any other languages. We apologize for the inconvenience.
+        </p>
+    </div>
+    <div>
+        <h2>Password Recovery</h2>
+        <hr>
+        <p>If you are unable to login to your account, please follow the steps which apply to you.</p>
+        <h3>I know my registered email and have access to it</h3>
+        <p>
+            Please go <a class="pp" href="#">here</a> and request a new password. If it does not arrive to your inbox after several minutes, please check your spam/junk folders. If the password still does not arrive (Hotmail, Live, and Outlook email domains), please click the "contact customer support" button and fill out the form including "I know my registered email and have access, but the email does not arrive" at the top of the inquiry.
+        </p>
+        <h3>I don't remember my registered email</h3>
+        <p>
+            Please go <a class="pp" href="#">here</a> and select "I do not remember the email address registered on my MAL account". An email will be sent to your provided email address with a hint to your registered email. If it does not arrive to your inbox after several minutes, please enter a different email address.
+        </p>
+        <h3>I know my registered email, but do not have access to it</h3>
+        <p>
+            Please go <a class="pp" href="#">here</a> and select "I cannot use the email address registered on my MAL account anymore". The form will use your old password (if your account is still locked from May 2018) and other information from your device to verify your identity. If the form succeeds, you will be sent a new password to your provided email within several minutes
+            .</p>
+        <h2>Two Factor Authentication (2FA)</h2>
+        <hr>
+        <p>
+            We recommend to increase your account security by enabling a second verification step after your password. To activate or deactivate this feature, please follow the instructions on the <a href="#">account settgings</a> page.
+        </p>
+        <h3>I lost access to the authentication app on my smart device</h3>
+        <p>
+            When you enabled 2FA, you were given 5 backup codes to save in a safe place. If you've lost access to the authentication app on your smart device, you can use one of these backup codes to log in. When prompted to enter the 6-digit app code, click "enter an unused backup code instead". Please note that each backup code can only be used once.
+        </p>
+        <h3>I lost access to the app and my backup codes</h3>
+        <p>
+            If you cannot log in because you lost access to both the app and your backup codes, please click the "contact customer support" button and fill out the form using your registered email address. Write "I cannot access my 2FA app and lost my backup codes" at the top, and include any other information we can use to verify your identity in your inquiry.
+        </p>
+        <h2>Account Deletion</h2>
+        <hr>
+        <p>
+            All account deletion requests are permanent. You cannot reactivate a deleted account or recover any account information after requesting a deletion. This includes purchased manga, MAL supporter status, anime/manga lists, private messages, and more.
+        </p>
+        <p>
+            You must save any information you would like to keep before requesting the deletion. Forum posts made by you will remain as "removed_user", so please manually delete any you would like erased.
+        </p>
+        <h4>The form says my entered email is invalid</h4>
+        <p>
+            Note that you cannot delete your account through the above link if your account:
+                - is currently banned or has been banned in the past (you will need to contact customer support)
+                - has changed its email address in the last 30 days (please wait before requesting a deletion)
+                 is a MAL supporter (you can cancel your Supporter status <a class="pp" href="#">here</a> )
+        </p>
+        <h4>No email arrives after completing the form</h4>
+        <p>
+            Please check your spam/junk folders. If it's not there and you are confident you entered the correct email address, please click the "contact customer support" button and fill out the form.
+        </p>
+        <h3>I know my registered email, but do not have access to it</h3>
+        <p>Please follow the steps below.</p>
+    </div>
+
+
+
     </main>
     <!-- barag l footer -->
     <div class="justFlex">
@@ -312,4 +312,5 @@
         </div>
     </footer>
 </body>
+
 </html>

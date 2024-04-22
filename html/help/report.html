@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../assets/MyAnimeList_Logo.png" type="image/png">
-    <link rel="stylesheet" href="../../css/login&signUp/login.css">
-    <title>Log In</title>
+    <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="../../css/help/report.css">
+    <title>Supports</title>
 </head>
+
 <body>
     <header id="header">
         <div id="header-logo-div">
@@ -21,7 +23,7 @@
         <div class="navbar-element">
             Anime
             <div class="dropdown-content">
-                <a href="./search.html">Anime search</a>
+                <a href="search.html">Anime search</a>
                 <a href="#">Top anime</a>
                 <a href="#">Seasonal anime</a>
                 <a href="#">Reviews</a>
@@ -39,7 +41,7 @@
         <div class="navbar-element">
             Help
             <div class="dropdown-content">
-                <a href="#">Abous us</a>
+                <a href="aboutUs.html">Abous us</a>
                 <a href="#">Support</a>
                 <a href="#">Report</a>
                 <a href="#">Stuffs</a>
@@ -48,77 +50,33 @@
         </div>
         <div id="search-input">
             <form>
-                <input id="navbar-search-input" placeholder="Search anime...">
+                <input placeholder="Search anime...">
                 <button type="submit">
-                    <img src="./assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                    <img src="../../assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
                 </button>
             </form>
         </div>
     </nav>
-    <main id="main">
-        <div id="login"><h2>login</h2></div>
-        <!-- login border -->
-        <div id="mainBorder">
-            <div class="loginWith">
-                <h3>loginWith</h3>
-            </div>
-            <!-- loginItems -->
-            <div class="loginitems">
-                <div class="firstLogin">
-                    <div><img src="../../assets/google.webp" alt="google" width="20" height="20"></div>
-                    <div class="spase"><a href="#"> google</a></div>
-                </div>
-                <div class="secondlogin">
-                    <div><img src="../../assets/appleicon.webp" alt="apple" width="20" height="20"></div>
-                    <div class="spase"><a href="#">Apple</a></div>
-                </div>
-            </div>
-            <div class="loginitems" id="div2">
-                <div class="firstLogin">
-                    <div><img src="../../assets/facebook.png" alt="google" width="20" height="20"></div>
-                    <div class="spase"><a href="#"> facebook</a></div>
-                </div>
-                <div class="secondlogin">
-                    <div><img src="../../assets/twitter.webp" alt="apple" width="20" height="20"></div>
-                    <div class="spase"><a href="#"> Twitter</a></div>
-                </div>
-            </div>
-            <div class="or">
-                <div id="leftline"><hr></div>
-                <div id="middleOr">Or</div>
-                <div id="rightline"><hr></div>
-            </div>
-            <div>
-                <div class="username"><small>Username</small></div>
-                <div class="loginInput"><input type="text"></div>
-                <div class="password">
-                    <div><small>Password</small></div>
-                    <div class="show">
-                        <div><img src="" alt=""></div>
-                        <div><small>Show Password</small></div>
-                    </div>
-                </div>
-                <div class="loginInput"><input type="text"></div>
-                <div class="stayLogged">
-                    <div><img src="" alt=""></div>
-                    <div><small>Stay logged in?</small></div>
-                </div>
-                <div class="stayLogged">
-                    <div><img src="../../assets/exclamation mark.webp" alt="exclamation mark" width="10"></div>
-                    <div><small>Beware of phishing sites pretending to be MAL. Always check the domain is myanimelist.net before entering your password.</small></div>
-                </div>
-                <div class="login">
-                    <a href="#">Login</a>
-                </div>
-                <div class="forget">
-                    <div id="forget"><a href="#"><small>Forget username</small></a></div>
-                    <div id="rightForget"><a href="#"><small>Forget password</small></a></div>
-                </div>
-                <div class="signup">
-                    <a href="../login&signUp/signUp.html">Sign Up</a>
-                </div>
-            </div>
+    <div id="forums">Support</div>
+    <main class="main">
+    <!-- second main -->
+    <div class="secondMain">
+        <div class="third">
+            <h3>Report Abuse</h3>
+        <hr>
+        <p style="text-align: center;">
+            Please use this report feature to notify an administrator/moderator of any abuse, nudity, excessive profanity, or anything you feel that exceeds a PG-13 rating. Provide a URL to the page in question. A moderator will review it and get back to you shortly.
+        </p>
+        <p>
+            Do not use this feature to report errors on anime/manga entries. Please use the DB <a class="pp" href="#">Modification Requests boards</a> for that.
+        </p>
+        Report Explanation: <br>
+        <div class="textinput"><input type="text" id="report" placeholder="write there" height="100px"></div>
+ 
+        <div class="button"><a href="#">Submit</a></div>
         </div>
+    </div>
+
     </main>
     <!-- barag l footer -->
     <div class="justFlex">
@@ -312,4 +270,5 @@
         </div>
     </footer>
 </body>
+
 </html>

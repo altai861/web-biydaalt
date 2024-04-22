@@ -2,16 +2,6 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.dark-mode {
-    background-color: black;
-    color: white
-}
-
-.light-mode {
-    background-color: white;
-    color: black;
-}
-
 body {
     margin-left: 100px;
     margin-right: 100px;
@@ -26,6 +16,31 @@ main {
 #header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.flex{
+    margin-left: 10px;
+    display: flex;
+}
+
+.side-menu{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-left: 250px;
+}
+.side-menu li{
+    margin-left: 10px;
+}
+.side-menu li a{
+    color: #333;
+    text-decoration: none;
+}
+
+#section{
+    display: flex;
     justify-content: space-between;
 }
 
@@ -63,6 +78,10 @@ main {
     color: rgb(18, 18, 149)
 }
 
+.selected {
+    background-color: antiquewhite;
+    color: white;
+}
 #navbar {
     background-color: rgb(23, 23, 214);
     color: white;
@@ -78,7 +97,6 @@ main {
     margin-right: 20px;
     margin-left: 20px;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -96,13 +114,15 @@ main {
     display: block;
 }
 .dropdown-content a:hover {background-color: #1420c8; color: white}
-
 .navbar-element:hover .dropdown-content {display: block;}
 .navbar-element:hover {
     background-color: rgb(47, 50, 210);
     color: white;
 }
 
+.nav-element {
+    margin-right: 10px;
+}
 
 #search-input {
     flex-grow: 1; /* Take up remaining space */
@@ -114,145 +134,14 @@ input {
     padding: 5px;
 }
 
-#main-content {
-    display: flex;
-    overflow: scroll;
-}
 
 /* main */
-#login{
-    border-bottom: 1px solid rgb(174, 173, 173);
-    margin: 0;
-    padding: 0;
-}
-#mainBorder{
-    margin-top: 20px;
-    border: 1px solid rgb(174, 173, 173);
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.loginWith{
-    text-align: center;
-}
-.loginitems{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.firstLogin{
-    display: flex;
-    font-size: 25px;
-    border: 1px solid rgb(174, 173, 173);
-    border-radius: 5px;
-    width: 140px;
-    text-align: center;
-    justify-content: center;
-}
-.firstLogin a{
-    text-decoration: none;
-}
-.secondlogin{
-    display: flex;
-    margin-left: 2%;
-    font-size: 25px;
-    border: 1px solid rgb(174, 173, 173);
-    border-radius: 5px;
-    width: 140px;
-    text-align: center;
-    justify-content: center;
-}
-.secondlogin a{
-    text-decoration: none;
-}
-#div2{
-    margin-top: 10px;
-}
-.spase{
-    margin-left: 3%;
-}
-.or{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-#leftline{
-    margin-top: 10px;
-    width: 40%;
-}
-#rightline{
-    margin-top: 10px;
-    width: 40%;
-}
-#middleOr{
-    margin-top: 6px;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-.loginInput{
-    border: 1px rgb(174, 173, 173);
-    width: 150%;
-    margin-left: 25%;
-}
-.username{
-    margin-left: 25%;
-}
-.password{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 25%;
-    margin-right: 28%;
-}
-.show{
-    display: flex;
-}
-.stayLogged{
-    display: flex;
-    margin-top: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-.login{
-    border: 1px rgb(174, 173, 173);
-    border-radius: 3px;
-    background-color: blue;
-    width: 35%;
-    margin-left: 32%;
-    text-align: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-.login a{
+#forums{
+    background-color: #b4b4b4;
     color: white;
-    text-decoration: none;
+    font-size: 20px;
 }
-.forget{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.forget a{
-    text-decoration: none;
-}
-#forget{
-    border-right: 1px rgb(174, 173, 173);
-}
-#rightForget{
-    margin-left: 2%;
-}
-.signup{
-    border: 1px rgb(174, 173, 173);
-    border-radius: 3px;
-    background-color: grey;
-    width: 35%;
-    margin-left: 32%;
-    text-align: center;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-.signup a{
-    color: white;
+.pp{
     text-decoration: none;
 }
 
