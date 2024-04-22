@@ -514,3 +514,191 @@ table .title {
     font-size: 17p;
     margin-left: 20px;
 }
+/* css for Interest stack */
+#main-content {
+    display: flex;
+    overflow: scroll;
+}
+
+#main-side {
+    flex-basis: 70%;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+#side-content {
+    flex-basis: 30%;
+    border-left: 1px solid rgb(168, 168, 168);
+    margin: 0;
+}
+.single-stack .stack-img {
+    width: 20%;
+}
+.single-stack .stack-img img{
+    width: 80%;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.single-stack .stack-img{
+    margin: 0;
+}
+
+.single-stack {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    border-bottom: 0.7px solid rgb(166, 166, 166);
+}
+
+.content-title {
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid rgb(166, 166, 166); ;
+}
+
+.content-info {
+    margin: 0;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.content-info a, p {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.content-info .info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+.entries-count,
+.hour {
+  display: inline; /* Display paragraphs inline */
+  margin-right: 5px; /* Add some space between the paragraphs */
+}
+.single-side-stack img {
+    width: 100%;
+    margin: 0;
+}
+.single-side-stack {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.7px solid rgb(166, 166, 166);
+}
+.single-side-stack .info {
+    margin: 0;
+}
+.side-stack-img {
+    width: 12%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.single-side-stack p {
+    font-size: 13px;
+}
+.single-side-stack .title-side {
+    color: rgb(2, 2, 151);
+    margin-top: 0;
+}
+.single-side-stack .info .action {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.single-side-stack .action p {
+    margin-top: 0;
+}
+/* css for seasonal anime */
+/* anime detail */
+.detail{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+#alphabet {
+    display: flex;
+    justify-content: center;
+}
+.alphabet-element {
+    color: rgb(115, 114, 114);
+    padding: 5px;
+    font-size: smaller;
+}
+
+.alphabet-element:hover {
+    background-color: rgb(187, 219, 247);
+}
+
+.anime{
+    display: flex;
+}
+.anime .info {
+    width: 100%;
+}
+#leftAnime{
+    float: left;
+    width: 31%;
+}
+#middleAnime{
+    width: 31%;
+}
+#rightAnime{
+    float: right;
+    width: 32%;
+}
+
+.single-anime {
+    border: 1px solid grey;
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin: 10px;
+}
+.detail-head{
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.detail-nav{
+    display: flex;
+    padding-right: 0;
+    justify-content: space-between;
+}
+
+.detail-footer{
+    display: flex;
+    justify-content: space-between;
+}
+/* scroll */
+.scrollable-container1 {
+    width: 150px;
+    height: 230px; /* Set the height of the container */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    padding: 10px; /* Optional: Add padding for better appearance */
+    border: 1px solid #ccc; /* Optional: Add border for better appearance */
+}
+.scrollable-container {
+    width: 140px;
+    height: 230px; /* Set the height of the container */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    padding: 10px; /* Optional: Add padding for better appearance */
+    border: 1px solid #ccc; /* Optional: Add border for better appearance */
+}
+
+.scroll-x1{
+    width: 150px;
+    height: 100px;
+    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.scroll-x{
+    width: 140px;
+    height: 100px;
+    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}

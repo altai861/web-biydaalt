@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/style-anime-detial.css">
+    <title>MyAnimeList</title>
+</head>
+<body class="light-mode">
+    <header id="header">
+        <div id="header-logo-div">
+            <a href="./index.html"><h1 id="mal-logo">MyAnimeList</h1></a>
+        </div>
+        <div id="login-signup-buttons">
+            <button id="login-button">Login</button>
+            <button id="signup-button">Signup</button>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="./search.html">Anime search</a>
+                <a href="./topAnime.html">Top anime</a>
+                <a href="./seasonalAnime.html">Seasonal anime</a>
+                <a href="./reviews.html">Reviews</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="#">Interest stacks</a>
+                <a href="#">Clubs</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="#">Abous us</a>
+                <a href="#">Support</a>
+                <a href="#">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div id="search-input">
+            <form>
+                <input id="navbar-search-input" placeholder="Search anime...">
+                <button type="submit">
+                    <img src="./assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="welcome">
+            <h3 id="welcoming-h3">Seasonal Anime</h3>
+        </div>
+        <div><a href="./index.html">Top</a> > <a href="./search.html">Anime</a> > <a href="./seasonalAnime.html">Seasonal Anime</a></div>
+        <div id="content">
+            <div class="detail">
+                <div class="single-anime" id="leftAnime">
+                    <div class="detail-head">
+                        <div>
+                            <a style="color: blue;" href="animeDetial.html">Shingeki no Kyojin</a>
+                        </div>
+                        <div style="margin-top: 0;">
+                            <p>Attack on Titan</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div><img src="assets/play.webp" alt="play" width="25px"></div>
+                        <div>TV,2013</div><hr>
+                        <div>Finished</div><hr>
+                        <div>25 eps,24min</div>
+                        <div><img src="assets/hide.png" alt="hide" width="20px"></div>
+                    </div>
+                    <div class="detail-nav">
+                        <div>Action</div>
+                        <div>AwardWinning</div>
+                        <div>Drama</div>
+                        <div>Suspense</div>
+                    </div>
+                    <div class="anime">
+                        <div>
+                            <a href="animeDetial.html"><img src="assets/AOT.webp" alt="AOT" width="210px" height="320px"></a>
+                        </div>
+                        <div height="320px">
+                            <div class="scrollable-container">
+                                <p>Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.
+                                    After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Eren, his adopted sister Mikasa Ackerman, and his childhood friend Armin Arlert join the brutal war against the Titans and race to discover a way of defeating them before the last walls are breached.
+                                </p>
+                            </div>
+                            <div class="scroll-x">
+                                <div><strong>Studio:</strong>Wit Studio</div>
+                                <div><strong>Sourse:</strong>manga</div>
+                                <div><strong>Themes:</strong>Gore,Military,Survival</div>
+                                <div><strong>Demographic:</strong>Shounen</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-footer">
+                        <div style="display: flex;">
+                            <img style="margin-top: 17px;" src="assets/star.webp" alt="star" width="20px" height="20px">
+                            <p>8.54</p>
+                        </div>
+                        <div style="display: flex;">
+                            <img style="margin-top: 20px;" src="assets/profile.webp" alt="profile" width="20px" height="15px">
+                            <p>3.9M</p>
+                        </div>
+                        <div>
+                            <button style="margin-top: 17px; background-color: #0073ff" type="button" onclick="alert('A successful addition!')">Add to List</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- second anime -->
+    
+                <div id="middleAnime" class="single-anime" >
+                    <div class="detail-head">
+                        <div>
+                            <a style="color: blue;" href="animeDetial.html">Fullmetal Alchemist:Brotherhood</a>
+                        </div>
+                        <div>
+                            <p>Fullmetal Alchemist:Brotherhood</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div><img src="assets/play.webp" alt="play" width="25px"></div>
+                        <div style="margin-left: 1px;">TV,2009</div><hr>
+                        <div>Finished</div><hr>
+                        <div style="margin-right: 1px;">64 eps,24 min</div>
+                        <div><img src="assets/hide.png" alt="hide" width="20px"></div>
+                    </div>
+                    <div class="detail-nav">
+                        <div>Action</div>
+                        <div>Adventure</div>
+                        <div>Drama</div>
+                        <div>Fantasy</div>
+                    </div>
+                    <div class="anime">
+                        <div>
+                            <img src="assets/FullMetal.webp" alt="FullMetal" width="210" height="320">
+                        </div>
+                        <div height="320px">
+                            <div class="scrollable-container">
+                                <p>After a horrific alchemy experiment goes wrong in the Elric household, brothers Edward and Alphonse are left in a catastrophic new reality. Ignoring the alchemical principle banning human transmutation, the boys attempted to bring their recently deceased mother back to life. Instead, they suffered brutal personal loss: Alphonse's body disintegrated while Edward lost a leg and then sacrificed an arm to keep Alphonse's soul in the physical realm by binding it to a hulking suit of armor.
+                                    The brothers are rescued by their neighbor Pinako Rockbell and her granddaughter Winry. Known as a bio-mechanical engineering prodigy, Winry creates prosthetic limbs for Edward by utilizing "automail," a tough, versatile metal used in robots and combat armor. After years of training, the Elric brothers set off on a quest to restore their bodies by locating the Philosopher's Stone—a powerful gem that allows an alchemist to defy the traditional laws of Equivalent Exchange.   
+                                    As Edward becomes an infamous alchemist and gains the nickname "Fullmetal," the boys' journey embroils them in a growing conspiracy that threatens the fate of the world.
+                                    </p>
+                            </div>
+                            <div class="scroll-x">
+                                <div><strong>Studio:</strong>Bones</div>
+                                <div><strong>Sourse:</strong>Manga</div>
+                                <div><strong>Themes:</strong>Military</div>
+                                <div><strong>Demographic:</strong>Shounen</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-footer">
+                        <div style="display: flex;">
+                            <img style="margin-top: 17px;" src="assets/star.webp" alt="star" width="20px" height="20px">
+                            <p>9.09</p>
+                        </div>
+                        <div style="display: flex;">
+                            <img style="margin-top: 20px;" src="assets/profile.webp" alt="profile" width="20px" height="15px">
+                            <div><p>3.3M</p></div>
+                        </div>
+                        <div>
+                            <button style="margin-top: 17px; background-color: #0073ff;" type="button" onclick="alert('A successful addition!')">Add to List</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 3th anime -->
+                <div class="single-anime" id="rightAnime">
+                    <div class="detail-head">
+                        <div style="margin-bottom: 0;">
+                            <a style="color: blue;" href="animeDetial.html">One Punch Man</a>
+                        </div>
+                        <div style="margin-top: 0;">
+                            <p>One Punch Man</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div><img src="assets/play.webp" alt="play" width="25px"></div>
+                        <div style="margin-left: 1px;">TV,2015</div><hr>
+                        <div>Finished</div><hr>
+                        <div style="margin-right: 1px;">12 eps,24min</div>
+                        <div><img src="assets/hide.png" alt="hide" width="20px"></div>
+                    </div>
+                    <div class="detail-nav" >
+                        <div>Action</div>
+                        <div>Comedy</div>
+                    </div>
+                    <div class="anime">
+                        <div>
+                            <img src="assets/OnepunchMan.jpg" alt="OnePunchMan" height="320" width="210">
+                        </div>
+                        <div height="320px">
+                            <div class="scrollable-container1">
+                                <p>The seemingly unimpressive Saitama has a rather unique hobby: being a hero. In order to pursue his childhood dream, Saitama relentlessly trained for three years, losing all of his hair in the process. Now, Saitama is so powerful, he can defeat any enemy with just one punch. However, having no one capable of matching his strength has led Saitama to an unexpected problem—he is no longer able to enjoy the thrill of battling and has become quite bored.
+                                    One day, Saitama catches the attention of 19-year-old cyborg Genos, who witnesses his power and wishes to become Saitama's disciple. Genos proposes that the two join the Hero Association in order to become certified heroes that will be recognized for their positive contributions to society. Saitama, who is shocked that no one knows who he is, quickly agrees. Meeting new allies and taking on new foes, Saitama embarks on a new journey as a member of the Hero Association to experience the excitement of battle he once felt.
+                                </p>
+                            </div>
+                            <div class="scroll-x1">
+                                <div><strong>Studio:</strong>Madhouse</div>
+                                <div><strong>Sourse:</strong>Web,manga</div>
+                                <div><strong>Themes:</strong>Adult,Cast,Parody,Super Power</div>
+                                <div><strong>Demographic:</strong>Seinen</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-footer">
+                        <div style="display: flex;">
+                            <div><img style="margin-top: 17px;" src="assets/star.webp" alt="star" width="20px" height="20px"></div>
+                            <div><p>8.50</p></div>
+                        </div>
+                        <div style="display: flex;">
+                            <img style="margin-top: 20px;" src="assets/profile.webp" alt="profile" width="20px" height="15px">
+                            <p>3.2M</p>
+                        </div>
+                        <div>
+                            <button style="margin-top: 17px; background-color: #0073ff" type="button" onclick="alert('A successful addition!')">Add to List</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="./scripts/contentChanger.js"></script>
+    </main>
+</body>
+</html>
