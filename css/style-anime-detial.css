@@ -741,3 +741,37 @@ table .title {
 .filter-input-div label {
     margin-right: 10px;
 }
+
+.single-club-title {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid rgb(166, 166, 166);
+}
+.single-club-title p {
+    font-size: 14px;
+    margin: 0;
+    color: #1420c8;
+    font-weight: bold;
+}
+.single-club p {
+    margin: 0;
+    font-size: 11px;
+}
+.club-join {
+    width: 70px;
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(0, 0, 152);
+    color: white;
+    border: 3px solid rgb(0, 0, 152);
+    border-radius: 3px;
+}
+/* style for blogs*/
+.single-blog p{
+    font-size: 14px;
+    margin: 0;
+    margin-right: 2%;
+}
