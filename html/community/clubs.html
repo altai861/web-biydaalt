@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/MyAnimeList_Logo.png" type="image/png">
+    <link rel="stylesheet" href="../../css/style-anime-detial.css">
+    <title>MyAnimeList</title>
+</head>
+<body class="light-mode">
+    <header id="header">
+        <div id="header-logo-div">
+            <a href="./index.html"><h1 id="mal-logo">MyAnimeList</h1></a>
+        </div>
+        <div id="login-signup-buttons">
+            <button id="login-button">Login</button>
+            <button id="signup-button">Signup</button>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="navbar-element">
+            Anime
+            <div class="dropdown-content">
+                <a href="./search.html">Anime search</a>
+                <a href="./topAnime.html">Top anime</a>
+                <a href="./seasonalAnime.html">Seasonal anime</a>
+                <a href="./reviews.html">Reviews</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Community
+            <div class="dropdown-content">
+                <a href="../community/interestStack.html">Interest stacks</a>
+                <a href="../community/clubs.html">Clubs</a>
+                <a href="../community/blogs.html">Blogs</a>
+            </div>
+        </div>
+        <div class="navbar-element">
+            Help
+            <div class="dropdown-content">
+                <a href="../help/aboutUs.html">Abous us</a>
+                <a href="../help/support.html">Support</a>
+                <a href="../help/report.html">Report</a>
+                <a href="#">Stuffs</a>
+                <a href="../help/faq.html">FAQ</a>
+            </div>
+        </div>
+        <div id="search-input">
+            <form>
+                <input placeholder="Search anime...">
+                <button type="submit">
+                    <img src="../../assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <main id="main">
+        <div id="welcome">
+            <h3 id="welcoming-h3">Anime Clubs</h3>
+        </div>
+        <div id="main-content-clubs">
+            <div id="search-anime-div">
+                <input id="search-anime-input" placeholder="Search anime...">
+                <button type="submit">
+                    <img src="../../assets/search-icon.png" alt="search-icon" width="10px" id="search-icon">
+                </button>
+                <div id="advanced-search-button-div">
+                    <a id="advanced-search-button" href="#">+ Advanced search</a>
+                </div>
+            </div>
+                <p class="content-title">Clubs</p>
+                <div class="single-club-title">
+                    <div class="club-img">
+                        <img src="../../assets/FullMetal.webp">
+                    </div>
+                    <div class="content-info">
+                        <div class="basic-info">
+                            <a href="./clubDetial.html" class="clubName">༒꧁Emilia's Self-Proclaimed Knights꧂༒</a>
+                            <p class="comment">Emilia is the IDEAL Goddess!</p> President:
+                            <p class="president">swirlydragon</p>
+                        </div>
+                        <p class="member">570</p>
+                        <div class="last-comment">
+                            <p class="time">7 minutes ago</p> 
+                            <p class="time">by Suka-7777-Suka</p> 
+                        </div>
+                        <p class="Last Post"></p>
+                        <button class="club-join">Join</button>
+                    </div>
+                </div>
+                <div class="single-club">
+                    <div class="club-img">
+                        <img src="../../assets/FullMetal.webp">
+                    </div>
+                    <div class="content-info">
+                        <div class="basic-info">
+                            <a href="./clubDetial.html" class="clubName">༒꧁Emilia's Self-Proclaimed Knights꧂༒</a>
+                            <p class="comment">Emilia is the IDEAL Goddess!</p> President:
+                            <p class="president">swirlydragon</p>
+                        </div>
+                        <p class="member">570</p>
+                        <div class="last-comment">
+                            <p class="time">7 minutes ago</p> 
+                            <p class="time">by Suka-7777-Suka</p> 
+                        </div>
+                        <p class="Last Post"></p>
+                        <button class="club-join">Join</button>
+                    </div>
+                </div>
+                
+            </div>
+        <script src="./scripts/contentChanger.js"></script>
+    </main>
+</body>
+</html>

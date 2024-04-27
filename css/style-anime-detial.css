@@ -702,3 +702,42 @@ table .title {
     padding: 10px;
     border: 1px solid #ccc;
 }
+/* css for clubs page */
+
+#search-anime-input {
+    font-size: large;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 60%;
+}
+
+#search-anime-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search-icon {
+    cursor: pointer;
+}
+
+#advanced-search-button-div {
+    text-align: right;
+}
+
+#advanced-search-button {
+    font-size: small;
+}
+
+#search-filter-div {
+    display: none;
+}
+
+.filter-input-div {
+    margin: 5px;
+    font-size: small;
+}
+
+.filter-input-div label {
+    margin-right: 10px;
+}
