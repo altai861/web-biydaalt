@@ -1,0 +1,252 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+main {
+    border-left: 0.7px solid rgb(166, 166, 166);
+    border-right: 0.7px solid rgb(174, 173, 173);
+    padding: 10px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex{
+    margin-left: 10px;
+    display: flex;
+}
+
+.side-menu{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-left: 250px;
+}
+.side-menu li{
+    margin-left: 10px;
+}
+.side-menu li a{
+    color: #333;
+    text-decoration: none;
+}
+
+#section{
+    display: flex;
+    justify-content: space-between;
+}
+
+#login-button {
+    width: 80px;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: white;
+    border: 3px solid rgb(0, 0, 152);
+    border-radius: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: rgb(0, 0, 152);
+}
+
+#login-button:hover {
+    background-color: aliceblue;
+}
+#signup-button {
+    width: 80px;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(0, 0, 152);
+    color: white;
+    border: 3px solid rgb(0, 0, 152);
+    border-radius: 3px;
+}
+
+#signup-button:hover {
+    background-color: rgb(110, 151, 187);
+}
+
+#mal-logo {
+    color: rgb(18, 18, 149)
+}
+
+.selected {
+    background-color: antiquewhite;
+    color: white;
+}
+#navbar {
+    background-color: rgb(23, 23, 214);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-element {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(240, 236, 170);
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #1420c8; color: white}
+.navbar-element:hover .dropdown-content {display: block;}
+.navbar-element:hover {
+    background-color: rgb(47, 50, 210);
+    color: white;
+}
+
+.nav-element {
+    margin-right: 10px;
+}
+
+#search-input {
+    flex-grow: 1; /* Take up remaining space */
+    text-align: right; /* Align input to the right */
+}
+
+input {
+    width: 30%;
+    padding: 5px;
+}
+
+
+
+/* main */
+#forums{
+    background-color: #b4b4b4;
+    color: white;
+    font-size: 20px;
+}
+
+.secondMain{
+    display: flex;
+}
+.right{
+    float: right;
+    width: 75%;
+}
+.left{
+    float: left;
+    width: 25%;
+    margin-right: 10px;
+}
+.borderr{
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 80px;
+    justify-content: center;
+    text-align: center;
+}
+.ugh{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.buttons{
+    display: flex;
+}
+.button{
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1420c8;
+    text-align: center;
+    margin-left: 10%;
+    width: 30%;
+    margin-top: 10px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+.line{
+    margin-top: 10px;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    margin-right: 4%;
+}
+.shh{
+    margin-top: 5px;
+}
+.shh a{
+    text-decoration: none;
+}
+.gif{
+    background-image: url(../../assets/sakura.gif);
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.lastpictures{
+    display: flex;
+}
+.center{
+    text-align: center;
+    justify-content: center;
+}
+.Lpicture{
+    margin-left: 13%;
+}
+.sImg{
+    margin-left: 3%;
+}
+
+
+
+/* footer */
+.footerItems{
+    display: flex;
+    margin-top: 40px;
+}
+.followUs{
+    display: flex;
+    margin-left: 15%;
+}
+.items{
+    margin-left: 10px;
+}
+.p{
+    text-align: center;
+}
+#centerItems{
+    justify-content: center;
+}
+#centerItems a{
+    text-decoration: none;
+    margin-left: 15px;
+}
+.clearUnderlane{
+    text-decoration: none;
+}
+.underItem{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.underItem a{
+    text-decoration: none;
+}
