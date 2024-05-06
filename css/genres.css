@@ -204,14 +204,14 @@ input {
 }
 /* scroll */
 .scrollable-container1 {
-    width: 190px;
+    width: 150px;
     height: 230px; /* Set the height of the container */
     overflow-y: auto; /* Enable vertical scrollbar */
     padding: 10px; /* Optional: Add padding for better appearance */
     border: 1px solid #ccc; /* Optional: Add border for better appearance */
 }
 .scrollable-container {
-    width: 190px;
+    width: 140px;
     height: 230px; /* Set the height of the container */
     overflow-y: auto; /* Enable vertical scrollbar */
     padding: 10px; /* Optional: Add padding for better appearance */
@@ -219,14 +219,14 @@ input {
 }
 
 .scroll-x1{
-    width: 190px;
+    width: 150px;
     height: 100px;
     overflow-x: auto;
     padding: 10px;
     border: 1px solid #ccc;
 }
 .scroll-x{
-    width: 190px;
+    width: 140px;
     height: 100px;
     overflow-x: auto;
     padding: 10px;
